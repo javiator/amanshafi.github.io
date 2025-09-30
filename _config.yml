@@ -58,7 +58,7 @@ author:
   name   : "Aman"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Enterprise & Solution Architecture Leader"
-  location: "City, Country"
+  location: "London, UK"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -105,16 +105,6 @@ defaults:
       layout: single
       author_profile: true
 
-# Navigation
-nav:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Projects"
-    url: /projects/
-  - title: "Blog"
-    url: /year-archive/
 
 category_archive:
   type: liquid
