@@ -57,12 +57,12 @@ plugins:
 author:
   name   : "Aman"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Enterprise & Solution Architecture Leader | Driving Digital Transformation in MarTech, Adobe Experience Cloud, AWS & AI/ML"
+  bio    : "Enterprise & Solution Architecture Leader"
   location: "City, Country"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://amanshafi.github.io"
+      url: "https://javiator.github.io"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://www.linkedin.com/in/amans82/"
