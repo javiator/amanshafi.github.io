@@ -1,0 +1,13 @@
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    container_name: jekyll-blog
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+    command: jekyll serve --host 0.0.0.0 --force_polling
+    environment:
+      - JEKYLL_ENV=development
+    working_dir: /srv/jekyll

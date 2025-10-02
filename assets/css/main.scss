@@ -4,37 +4,107 @@
 @import "minimal-mistakes/skins/air"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Custom styles to increase post width
+// Make only the central post content area wider - 1280px width
+article.page {
+  max-width: 1280px !important;
+  padding-right: 0 !important;
+}
+
+// Target the main content text area specifically
 .page__content {
-  max-width: 1200px; // Increase from default ~800px
+  max-width: 1280px !important;
 }
 
-.page__inner-wrap {
-  max-width: 1200px; // Increase from default ~800px
+// Also target any content within the article
+article.page .page__content {
+  max-width: 1280px !important;
 }
 
-// For single posts
-.single {
-  .page__content {
-    max-width: 1200px;
-  }
+// Override the parent div that's constraining the width
+.initial-content > div {
+  max-width: 1280px !important;
 }
 
-// For archive pages
-.archive {
-  .page__content {
-    max-width: 1200px;
-  }
+// Remove any sidebar padding that's constraining the content
+.layout--single article.page {
+  padding-right: 0 !important;
 }
 
-// Adjust sidebar if needed
-.sidebar {
-  width: 300px; // Keep sidebar width reasonable
+// Make fonts a bit larger for better readability (excluding left sidebar)
+body {
+  font-size: 16px !important;
 }
 
-// For very wide screens, you might want to limit max width
-@media (min-width: 1400px) {
-  .page__content {
-    max-width: 1400px;
-  }
+// Target main content area and navigation (excluding sidebar)
+#main,
+#main *,
+.navigation,
+.navigation *,
+.page__content,
+.page__content *,
+.entry-content,
+.entry-content * {
+  font-size: 16px !important;
+}
+
+// Headings in main content
+#main h1,
+.page__content h1,
+.entry-content h1 {
+  font-size: 28px !important;
+}
+
+#main h2,
+.page__content h2,
+.entry-content h2 {
+  font-size: 24px !important;
+}
+
+#main h3,
+.page__content h3,
+.entry-content h3 {
+  font-size: 22px !important;
+}
+
+#main h4,
+.page__content h4,
+.entry-content h4 {
+  font-size: 20px !important;
+}
+
+// Paragraphs and text
+#main p,
+.page__content p,
+.entry-content p {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+
+#main li,
+.page__content li,
+.entry-content li {
+  font-size: 16px !important;
+}
+
+#main code,
+.page__content code,
+.entry-content code {
+  font-size: 15px !important;
+}
+
+#main pre,
+.page__content pre,
+.entry-content pre {
+  font-size: 15px !important;
+}
+
+// Navigation links
+.navigation a,
+.navigation .nav__list a {
+  font-size: 16px !important;
+}
+
+// Page title
+.page__title {
+  font-size: 24px !important;
 }
