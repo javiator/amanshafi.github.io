@@ -1,6 +1,6 @@
 ---
 title: "From Single-File to Modular Architecture: Evolving the Tenant Management App"
-date: 2025-01-16
+date: 2025-10-02
 categories: [Learning, Full-Stack Development, Architecture, Python]
 tags: [flask, fastapi, react, modular-architecture, api-driven, microservices, learning]
 ---
@@ -374,22 +374,14 @@ The FastAPI version provides automatic API documentation:
 - **React Development**: Modern frontend patterns
 - **FastAPI**: Modern Python web framework
 - **Development Workflow**: Coordinating multiple services
-- **Testing Strategies**: Unit and integration testing approaches
 
-### What I'd Do Differently Next Time
-
-- **Start with FastAPI**: The type safety and auto-docs are game-changers
-- **Add Testing Earlier**: Write tests as I build, not after
-- **Use State Management**: For complex state, consider Redux or Zustand
-- **Add Authentication**: Implement proper user authentication
-- **Database Migrations**: Use Alembic for database versioning
 
 ## The Code and Demo 🚀
 
 You can explore both versions in my repository:
 
-- **Original Single-File**: [`tenant-management-app/`](https://github.com/javiator/learn_ai/tree/main/tenant-management-app)
-- **Modular Version**: [`tenant-management-modular/`](https://github.com/javiator/learn_ai/tree/main/tenant-management-modular)
+- **Original Single-File**: [`tenant-management-app/`](https://github.com/javiator/tenant-management-applications/tree/main/tenant-management-app)
+- **Modular Version**: [`tenant-management-modular/`](https://github.com/javiator/tenant-management-applications/tree/main/tenant-management-modular)
 
 The modular version includes:
 - Complete Flask and FastAPI backends
