@@ -106,5 +106,65 @@ body {
 
 // Page title
 .page__title {
+  font-size: 28px !important;
+}
+
+// Site header and navigation - match content heading sizes
+.site__title {
+  font-size: 28px !important;
+}
+
+.site__subtitle {
+  font-size: 20px !important;
+}
+
+// Navigation header
+.navigation {
+  font-size: 20px !important;
+}
+
+.navigation .nav__list {
+  font-size: 20px !important;
+}
+
+// Main site header
+.masthead {
+  font-size: 20px !important;
+}
+
+// Site title link (main navigation) - more specific targeting
+.navigation a[href="/"] {
+  font-size: 28px !important;
+}
+
+// Archive and category titles
+.archive__item-title {
   font-size: 24px !important;
+}
+
+// Post titles in listings - match H2 content size
+.entry__title {
+  font-size: 24px !important;
+}
+
+// Post titles in listings (h2 a) - more specific
+.entry__title a,
+h2.entry__title a,
+.archive__item h2 a {
+  font-size: 24px !important;
+}
+
+// Section headings like "Recent Posts"
+h3 {
+  font-size: 22px !important;
+}
+
+// Force all h2 links to be larger
+h2 a {
+  font-size: 24px !important;
+}
+
+// Force site title to be larger
+.navigation .site__title {
+  font-size: 28px !important;
 }
