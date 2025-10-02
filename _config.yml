@@ -21,6 +21,10 @@ github_username: javiator
 minimal_mistakes_skin: air
 search: true
 
+# Custom CSS
+custom_css:
+  - "/assets/css/main.scss"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes

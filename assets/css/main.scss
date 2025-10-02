@@ -1,0 +1,40 @@
+---
+---
+
+@import "minimal-mistakes/skins/air"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Custom styles to increase post width
+.page__content {
+  max-width: 1200px; // Increase from default ~800px
+}
+
+.page__inner-wrap {
+  max-width: 1200px; // Increase from default ~800px
+}
+
+// For single posts
+.single {
+  .page__content {
+    max-width: 1200px;
+  }
+}
+
+// For archive pages
+.archive {
+  .page__content {
+    max-width: 1200px;
+  }
+}
+
+// Adjust sidebar if needed
+.sidebar {
+  width: 300px; // Keep sidebar width reasonable
+}
+
+// For very wide screens, you might want to limit max width
+@media (min-width: 1400px) {
+  .page__content {
+    max-width: 1400px;
+  }
+}
