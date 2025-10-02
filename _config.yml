@@ -33,6 +33,24 @@ head:
       article.page .page__content { max-width: 1280px !important; }
       .initial-content > div { max-width: 1280px !important; }
       .layout--single article.page { padding-right: 0 !important; }
+      
+      /* Force header and title font sizes to match content headings */
+      .navigation a[href="/"] { font-size: 28px !important; }
+      h2 a { font-size: 24px !important; }
+      h3 { font-size: 22px !important; }
+      .entry__title { font-size: 24px !important; }
+      .entry__title a { font-size: 24px !important; }
+      .archive__item-title { font-size: 24px !important; }
+      .site__title { font-size: 28px !important; }
+      .navigation { font-size: 20px !important; }
+      .navigation .nav__list { font-size: 20px !important; }
+      
+      /* More specific targeting for post titles */
+      .archive__item h2 a { font-size: 24px !important; }
+      .archive__item .entry__title a { font-size: 24px !important; }
+      .archive__item h2 { font-size: 24px !important; }
+      .archive__item .entry__title { font-size: 24px !important; }
+      .archive__item h2 a, .archive__item h2 { font-size: 24px !important; }
     </style>'
 
 # Build settings
