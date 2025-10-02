@@ -197,7 +197,7 @@ Even in a single-file application, maintaining clear separation between:
 
 ## The Code and Demo 🚀
 
-You can explore the complete codebase in my [GitHub repository](https://github.com/javiator/learn_ai/tree/main/tenant-management-app). The app includes:
+You can explore the complete codebase in my [GitHub repository](https://github.com/javiator/tenant-management-applications/tree/main/tenant-management-app). The app includes:
 
 - Complete source code with detailed comments
 - README with setup instructions
