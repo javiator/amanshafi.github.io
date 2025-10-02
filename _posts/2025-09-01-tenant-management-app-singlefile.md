@@ -1,10 +1,8 @@
 ---
 title: "Building a Full-Stack Property Management App: Single File Version"
-date: 2025-10-01
+date: 2025-09-01
 categories: [Learning, Full-Stack Development, Python]
 tags: [flask, sqlalchemy, property-management, full-stack, learning, web-development]
-
-# Journey metadata
 project: "tenant-management-app"
 journey_phase: "foundation"
 journey_step: 1

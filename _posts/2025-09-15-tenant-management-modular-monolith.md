@@ -1,16 +1,14 @@
 ---
 title: "From Single-File to Modular Monolith: Refactoring the Tenant Management App"
-date: 2025-10-03
+date: 2025-09-15
 categories: [Learning, Architecture, Refactoring]
 tags: [flask, fastapi, react, modular-monolith, refactoring, architecture]
-
-# Journey metadata
 project: "tenant-management-app"
 journey_phase: "architecture-evolution"
 journey_step: 2
 content_type: "architecture-analysis"
 previous_post: "/learning/full-stack%20development/python/tenant-management-app-singlefile/"
-next_post: null
+next_post: "/learning/architecture/tenant-management-system-architecture/"
 learning_focus: ["modular-architecture", "service-layer-pattern", "clean-separation"]
 ---
 

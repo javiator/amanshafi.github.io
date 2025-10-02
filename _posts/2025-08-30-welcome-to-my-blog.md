@@ -1,6 +1,6 @@
 ---
 title: "Welcome to My Learning Journey! 🚀"
-date: 2025-09-30
+date: 2025-08-30
 categories: [Learning, Architecture]
 tags: [intro, learning, architecture, experiences]
 ---

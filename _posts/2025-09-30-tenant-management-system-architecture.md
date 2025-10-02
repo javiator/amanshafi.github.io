@@ -1,10 +1,8 @@
 ---
 title: "Tenant Management System: Modular Monolith Architecture"
-date: 2025-10-05
+date: 2025-09-30
 categories: [Learning, Architecture, System Design]
 tags: [modular-monolith, system-architecture, component-architecture, learning]
-
-# Journey metadata
 project: "tenant-management-app"
 journey_phase: "architecture-documentation"
 journey_step: 3
