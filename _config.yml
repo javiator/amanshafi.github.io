@@ -25,6 +25,16 @@ search: true
 custom_css:
   - "/assets/css/main.scss"
 
+# Add custom head content
+head:
+  - '<style>
+      article.page { max-width: 1280px !important; padding-right: 0 !important; }
+      .page__content { max-width: 1280px !important; }
+      article.page .page__content { max-width: 1280px !important; }
+      .initial-content > div { max-width: 1280px !important; }
+      .layout--single article.page { padding-right: 0 !important; }
+    </style>'
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -68,26 +78,20 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://javiator.github.io"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/amans82/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/javiator"
 
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/amans82/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/javiator"
 
 defaults:
   # _posts
