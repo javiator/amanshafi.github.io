@@ -5,30 +5,40 @@ permalink: /projects/
 
 Here are some of the projects I've been working on, showcasing my journey in full-stack development and enterprise architecture.
 
-## 🏗️ Full-Stack Applications
+## 🎯 Journey Overview
 
-### 🔹 Tenant Management App
-**A comprehensive property management solution built with Flask and modern web technologies.**
+Each project represents a complete learning journey, demonstrating both implementation skills and architectural thinking. These journeys showcase:
 
-- **Tech Stack**: Flask, SQLAlchemy, SQLite, Tailwind CSS, JavaScript
-- **Features**: Property & tenant management, transaction tracking, data export (CSV/Excel), responsive UI
-- **Architecture**: Single-file application design with embedded templates
-- **Learning Focus**: Full-stack development, database design, modern UI/UX
+- **Feature Development**: Building and iterating on functionality
+- **Architecture Analysis**: Deep-dive into system design and patterns
+- **Service Documentation**: Detailed service architecture and implementation
+- **Infrastructure Design**: Cloud architecture and deployment strategies
+- **Problem Solving**: Troubleshooting and optimization approaches
 
-*[Read the full case study →](/learning/full-stack%20development/python/tenant-management-app-singlefile/)*
+## 🏗️ Learning Journeys
 
----
+### 🔹 Tenant Management App Journey
+**A comprehensive property management solution showcasing architectural evolution and enterprise-level thinking**
 
-## 🌐 Web Development
+**Journey Timeline:**
+- **Foundation** (Oct 1): [Single-File Version →](/learning/full-stack%20development/python/tenant-management-app-singlefile/) *(Feature)*
+- **Architecture Evolution** (Oct 3): [Modular Monolith →](/learning/architecture/tenant-management-modular-monolith/) *(Architecture)*
+- **System Architecture** (Oct 5): [Modular Monolith Architecture →](/learning/architecture/tenant-management-system-architecture/) *(Architecture)*
+- **Component Architecture** (Planned): [Component Deep-Dive →](/learning/architecture/tenant-management-component-architecture/) *(Service)*
+- **Infrastructure** (Planned): [Cloud Deployment Strategy →](/learning/infrastructure/cloud/tenant-management-deployment/) *(Infrastructure)*
+- **Next Phase** (Planned): [Microservices Evolution →](/learning/architecture/tenant-management-microservices/) *(Architecture)*
 
-### 🔹 Portfolio Website  
-**A personal blog + portfolio built using Jekyll and GitHub Pages.**
+**Content Types Covered:**
+- ✅ Feature Development
+- ✅ Architecture Analysis
+- 🚧 Service Documentation
+- 🚧 Infrastructure Design
+- 🚧 Security Architecture
+- 🚧 Performance Optimization
 
-- **Tech Stack**: Jekyll, GitHub Pages, Minimal Mistakes theme
-- **Features**: Responsive design, blog functionality, project showcase
-- **Focus**: Content management, static site generation, developer experience
-
-*[View source →](https://github.com/javiator/javiator.github.io)*
+**Current Status**: 🚧 In Progress (Phase 3 Complete)
+**Tech Evolution**: Single-File Flask → Modular Monolith (Flask + FastAPI + React) → [Next: Microservices]
+**Learning Focus**: Full-stack development, modular architecture, service layer patterns, API design
 
 ---
 
