@@ -13,9 +13,9 @@ toc_icon: "list"
 
 Hey there! 👋
 
-Following up on my [previous post about the single-file tenant management app](2025-09-01-tenant-management-app-singlefile.md), today I want to share the next step - refactoring it into a **modular monolith**. This was a crucial learning experience that taught me the importance of clean architecture while keeping things manageable.
+Following up on my [previous post about the single-file tenant management app](/learning/development/implementation/tenant-management-app-singlefile/), today I want to share the next step - refactoring it into a **modular monolith**. This was a crucial learning experience that taught me the importance of clean architecture while keeping things manageable.
 
-> **📋 Requirements Context**: This modular architecture implementation is based on the detailed requirements outlined in [Landlord-Tenant Management System: Requirements and Objectives](2025-08-31-tenant-management-requirements.md). The requirements post explains the business goals and user stories that shaped both the single-file and modular implementations.
+> **📋 Requirements Context**: This modular architecture implementation is based on the detailed requirements outlined in [Landlord-Tenant Management System: Requirements and Objectives](/learning/requirements/analysis/tenant-management-requirements/). The requirements post explains the business goals and user stories that shaped both the single-file and modular implementations.
 
 ## Why Refactor? 🤔
 
