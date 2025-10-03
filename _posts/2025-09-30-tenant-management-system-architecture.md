@@ -3,23 +3,15 @@ title: "Tenant Management System: Modular Monolith Architecture"
 date: 2025-09-30
 categories: [Learning, Architecture, System Design]
 tags: [modular-monolith, system-architecture, component-architecture, learning]
-project: "tenant-management-app"
-journey_phase: "architecture-documentation"
-journey_step: 3
 content_type: "architecture-analysis"
-previous_post: "/learning/architecture/tenant-management-modular-monolith/"
-next_post: "/learning/architecture/tenant-management-component-architecture/"
-learning_focus: ["modular-monolith", "layered-architecture", "separation-of-concerns"]
+learning_focus: ["modular-monolith", "layered-architecture", "separation-of-concerns", "system-design"]
+difficulty: "intermediate"
 ---
 
 Hey there! 👋
 
 Building on our [modular monolith evolution](2025-10-03-tenant-management-modular-monolith.md), today I want to dive deep into the **system architecture** of the Tenant Management System. This post explores the architectural decisions, component relationships, and design patterns that make this modular monolith scalable and maintainable.
 
-## 🚀 Journey Navigation
-- **Previous**: [Modular Monolith Evolution →](/learning/architecture/tenant-management-modular-monolith/)
-- **Current**: System Architecture Analysis
-- **Next**: [Component Architecture Deep-Dive →](/learning/architecture/tenant-management-component-architecture/) *(Planned)*
 
 ## System Architecture Overview 🏗️
 

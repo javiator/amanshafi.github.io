@@ -1,68 +1,42 @@
 ---
-title: "Learning Journeys"
+title: "Technical Content"
 permalink: /projects/
 ---
 
-Here are my comprehensive learning journeys, showcasing both implementation skills and architectural thinking through complete project evolution.
+A summary of my technical posts covering architecture, development, and learning insights.
 
-## 🎯 Journey Philosophy
+## 📚 All Posts
 
-Each project represents a complete learning journey that demonstrates:
+### Architecture & System Design
+- **[Tenant Management System: Modular Monolith Architecture](/learning/architecture/tenant-management-system-architecture/)**  
+  *September 30, 2025* • Architecture Analysis • Intermediate  
+  Deep dive into the system architecture of a modular monolith, exploring component relationships and design patterns.
 
-- **Feature Development**: Building and iterating on functionality
-- **Architecture Analysis**: Deep-dive into system design and patterns  
-- **Service Documentation**: Detailed service architecture and implementation
-- **Infrastructure Design**: Cloud architecture and deployment strategies
-- **Problem Solving**: Troubleshooting and optimization approaches
-- **Continuous Evolution**: Projects grow and evolve with new insights
+- **[From Single-File to Modular Monolith: Refactoring the Tenant Management App](/learning/architecture/tenant-management-modular-monolith/)**  
+  *September 15, 2025* • Architecture Analysis • Intermediate  
+  Refactoring journey from a single-file application to a clean modular monolith architecture.
 
-## 🏗️ Active Learning Journeys
+### Development & Implementation
+- **[Building a Full-Stack Property Management App: Single File Version](/learning/full-stack%20development/python/tenant-management-app-singlefile/)**  
+  *September 1, 2025* • Feature Development • Intermediate  
+  Complete full-stack web application built with Flask, SQLAlchemy, and modern web development practices.
 
-### 🔹 Tenant Management App Journey
-**A comprehensive property management solution showcasing architectural evolution and enterprise-level thinking**
+### Learning & Insights
+- **[Welcome to My Learning Journey!](/learning/architecture/welcome-to-my-blog/)**  
+  *August 30, 2025* • Opinion • Beginner  
+  Introduction to my learning journey and approach to sharing technical knowledge and experiences.
 
-**Journey Timeline:**
-- **Foundation** (Sep 1): [Single-File Version →](/learning/full-stack%20development/python/tenant-management-app-singlefile/) *(Feature)*
-- **Architecture Evolution** (Sep 15): [Modular Monolith →](/learning/architecture/tenant-management-modular-monolith/) *(Architecture)*
-- **System Architecture** (Sep 30): [Modular Monolith Architecture →](/learning/architecture/tenant-management-system-architecture/) *(Architecture)*
-- **Component Architecture** (Planned): [Component Deep-Dive →](/learning/architecture/tenant-management-component-architecture/) *(Service)*
-- **Infrastructure** (Planned): [Cloud Deployment Strategy →](/learning/infrastructure/cloud/tenant-management-deployment/) *(Infrastructure)*
-- **Security** (Planned): [Security Architecture →](/learning/security/tenant-management-security-design/) *(Security)*
-- **Performance** (Planned): [Performance Optimization →](/learning/performance/tenant-management-optimization/) *(Performance)*
-- **Next Phase** (Planned): [Microservices Evolution →](/learning/architecture/tenant-management-microservices/) *(Architecture)*
+## 🏷️ Content Overview
 
-**Content Types Covered:**
-- ✅ Feature Development
-- ✅ Architecture Analysis
-- 🚧 Service Documentation
-- 🚧 Infrastructure Design
-- 🚧 Security Architecture
-- 🚧 Performance Optimization
-- 🚧 Integration Patterns
-- 🚧 Deployment Strategy
+**Total Posts:** 4  
+**Content Types:** Architecture Analysis (2), Feature Development (1), Opinion (1)  
+**Difficulty Levels:** Beginner (1), Intermediate (3)
 
-**Current Status**: 🚧 In Progress (Phase 3 Complete)
-**Tech Evolution**: Single-File Flask → Modular Monolith (Flask + FastAPI + React) → [Next: Microservices]
-**Learning Focus**: Full-stack development, modular architecture, service layer patterns, API design, system architecture
+## 🎯 Focus Areas
 
----
+- **System Architecture**: Modular monoliths, component design, architectural patterns
+- **Full-Stack Development**: End-to-end application development with modern frameworks
+- **Learning & Growth**: Professional development and knowledge sharing
 
-## 🎯 Completed Journeys
-
-*No completed journeys yet - all projects are currently in active development*
-
----
-
-## 🚀 What's Next
-
-I'm constantly working on new projects and learning opportunities. Each journey demonstrates both implementation skills and architectural thinking, showcasing:
-
-- **Complete Project Evolution**: From initial concept to production-ready solutions
-- **Architectural Decision Making**: Deep dives into design patterns and trade-offs
-- **Technology Mastery**: Full-stack development with modern frameworks
-- **Enterprise Thinking**: Scalable, maintainable, and secure solutions
-
-Check back regularly for updates on my latest work in enterprise architecture, cloud solutions, and full-stack development.
-
-*Interested in collaborating or discussing any of these projects? [Get in touch!](/about/)*
+*Browse all posts by [category](/posts/) or [tag](/tags/).*
 

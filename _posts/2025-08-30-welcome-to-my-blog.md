@@ -3,6 +3,9 @@ title: "Welcome to My Learning Journey! 🚀"
 date: 2025-08-30
 categories: [Learning, Architecture]
 tags: [intro, learning, architecture, experiences]
+content_type: "opinion"
+learning_focus: ["learning-journey", "personal-development"]
+difficulty: "beginner"
 ---
 
 Hey there! 👋  
@@ -56,3 +59,4 @@ I'd love to hear from you! Feel free to:
 Thanks for joining me on this learning adventure! ✨
 
 *P.S. – This is a journey, not a destination. Let's learn and grow together! 🚀*
+

@@ -3,23 +3,15 @@ title: "Building a Full-Stack Property Management App: Single File Version"
 date: 2025-09-01
 categories: [Learning, Full-Stack Development, Python]
 tags: [flask, sqlalchemy, property-management, full-stack, learning, web-development]
-project: "tenant-management-app"
-journey_phase: "foundation"
-journey_step: 1
-content_type: "feature-enhancement"
-previous_post: null
-next_post: "/learning/architecture/tenant-management-modular-monolith/"
-learning_focus: ["single-file-architecture", "rapid-prototyping", "embedded-templates"]
+content_type: "feature-development"
+learning_focus: ["single-file-architecture", "rapid-prototyping", "embedded-templates", "flask", "sqlalchemy"]
+difficulty: "intermediate"
 ---
 
 Hey there! 👋
 
 Today I want to share my experience building a comprehensive **Tenant Management App** - a full-stack web application that manages properties, tenants, and financial transactions. This project was a fantastic learning journey that taught me valuable lessons about modern web development, database design, and creating user-friendly interfaces.
 
-## 🚀 Journey Navigation
-- **Previous**: [Starting the Journey](/about/)
-- **Current**: Building Foundation (Single File Architecture)
-- **Next**: [Modular Architecture Evolution →](/learning/architecture/tenant-management-modular-monolith/)
 
 ## What I Built 🏗️
 
@@ -258,4 +250,5 @@ Building this tenant management app was an incredible learning experience. It ta
 The single-file approach, while not suitable for every project, was perfect for this use case. It allowed me to focus on learning the core concepts without getting bogged down in project structure decisions.
 
 If you're learning full-stack development, I highly recommend building a similar project. Start with a simple CRUD application and gradually add features. You'll be surprised how much you learn about both the technologies and the problem domain.
+
 
