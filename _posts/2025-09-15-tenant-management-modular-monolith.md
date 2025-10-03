@@ -6,9 +6,6 @@ tags: [flask, fastapi, react, modular-monolith, refactoring, architecture]
 content_type: "architecture-analysis"
 learning_focus: ["modular-architecture", "service-layer-pattern", "clean-separation", "refactoring"]
 difficulty: "intermediate"
-toc: true
-toc_label: "Table of Contents"
-toc_icon: "list"
 ---
 
 Hey there! 👋

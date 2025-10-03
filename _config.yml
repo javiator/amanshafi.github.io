@@ -100,7 +100,6 @@ footer:
       url: "https://github.com/javiator"
 
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -114,7 +113,8 @@ defaults:
       toc: true
       toc_label: "Table of Contents"
       toc_icon: "list"
-  # _pages
+      toc_sticky: true
+      toc_sidebar: true
   - scope:
       path: "_pages"
       type: pages
@@ -124,6 +124,8 @@ defaults:
       toc: true
       toc_label: "Table of Contents"
       toc_icon: "list"
+      toc_sticky: true
+      toc_sidebar: true
 
 
 category_archive:

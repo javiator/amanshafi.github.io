@@ -6,9 +6,6 @@ tags: [flask, sqlalchemy, property-management, full-stack, learning, web-develop
 content_type: "feature-development"
 learning_focus: ["single-file-architecture", "rapid-prototyping", "embedded-templates", "flask", "sqlalchemy"]
 difficulty: "intermediate"
-toc: true
-toc_label: "Table of Contents"
-toc_icon: "list"
 ---
 
 Hey there! 👋
