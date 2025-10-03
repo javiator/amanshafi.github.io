@@ -6,9 +6,6 @@ tags: [requirements, objectives, user-stories, tenant-management, property-manag
 content_type: "requirements"
 learning_focus: ["requirements-analysis", "project-planning"]
 difficulty: "beginner"
-toc: true
-toc_label: "Table of Contents"
-toc_icon: "list"
 ---
 
 Hey there! 👋
@@ -225,4 +222,4 @@ With these requirements defined, the next phases include:
 
 This requirements document serves as the foundation for building the Landlord-Tenant Management System. It focuses on simplicity, clarity, and practical utility for individual landlords managing their rental properties.
 
-*Want to see how these requirements evolved into a working application? Check out the [Single-File Implementation](2025-09-01-tenant-management-app-singlefile.md) and [Modular Architecture](2025-09-15-tenant-management-modular-monolith.md) posts!*
+*Want to see how these requirements evolved into a working application? Check out the [Single-File Implementation](/learning/development/implementation/tenant-management-app-singlefile/) and [Modular Architecture](/learning/architecture/system%20design/tenant-management-modular-monolith/) posts!*
