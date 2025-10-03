@@ -7,6 +7,11 @@ A summary of my technical posts covering architecture, development, and learning
 
 ## 📚 All Posts
 
+### Requirements & Analysis
+- **[Landlord-Tenant Management System: Requirements and Objectives](/learning/requirements/tenant-management-requirements/)**  
+  *August 31, 2025* • Requirements • Beginner  
+  Comprehensive requirements analysis for a landlord-tenant management system, including business objectives and detailed user stories.
+
 ### Architecture & System Design
 - **[Tenant Management System: Modular Monolith Architecture](/learning/architecture/tenant-management-system-architecture/)**  
   *September 30, 2025* • Architecture Analysis • Intermediate  
@@ -28,12 +33,13 @@ A summary of my technical posts covering architecture, development, and learning
 
 ## 🏷️ Content Overview
 
-**Total Posts:** 4  
-**Content Types:** Architecture Analysis (2), Feature Development (1), Opinion (1)  
-**Difficulty Levels:** Beginner (1), Intermediate (3)
+**Total Posts:** 5  
+**Content Types:** Architecture Analysis (2), Feature Development (1), Requirements (1), Opinion (1)  
+**Difficulty Levels:** Beginner (2), Intermediate (3)
 
 ## 🎯 Focus Areas
 
+- **Requirements Analysis**: Business requirements, user stories, and project planning
 - **System Architecture**: Modular monoliths, component design, architectural patterns
 - **Full-Stack Development**: End-to-end application development with modern frameworks
 - **Learning & Growth**: Professional development and knowledge sharing

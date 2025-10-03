@@ -31,6 +31,7 @@ content_types:
   - "deployment-strategy"       # CI/CD, environment management, rollback
   - "code-review"              # Code analysis, best practices, refactoring
   - "tutorial"                 # Step-by-step guides, how-to content
+  - "requirements"             # Requirements analysis, specifications, acceptance criteria
   - "opinion"                  # Technical opinions, industry thoughts
   - "research"                 # Technical research, findings, experiments
   - "book-review"              # Technical book reviews, summaries
@@ -75,6 +76,12 @@ content_types:
 - "5 Years of React: Lessons and Best Practices"
 - "Database Migration Strategies: What Works and What Doesn't"
 - "Code Review Best Practices from 100+ Reviews"
+
+#### Requirements
+- "API Requirements Specification: User Authentication Service"
+- "System Requirements Analysis: High-Availability E-commerce Platform"
+- "Functional Requirements: Real-time Chat Application"
+- "Non-Functional Requirements: Performance and Security Specifications"
 
 ## Frontmatter Schema
 
@@ -259,6 +266,34 @@ difficulty: "intermediate"
 [Summary of debugging insights]
 ```
 
+#### Requirements Post Template
+
+```markdown
+---
+title: "[System/Feature]: Requirements and Objectives"
+date: 2025-10-01
+categories: [Learning, Requirements, Analysis]
+tags: [requirements, objectives, user-stories]
+content_type: "requirements"
+learning_focus: ["requirements-analysis", "project-planning"]
+difficulty: "intermediate"
+---
+
+# [System/Feature]: Requirements and Objectives
+
+## What We Plan to Create
+[Brief description of the system or feature]
+
+## Objectives
+[Key goals and what we want to achieve]
+
+## User Stories
+[Specific user scenarios and what users need to accomplish]
+
+## Key Takeaways
+[Summary of requirements insights]
+```
+
 ## Projects Page Structure
 
 ### Content-Focused Projects Page
@@ -420,6 +455,13 @@ When creating a new post, ensure you:
 - Include specific examples and stories
 - Connect to broader industry trends
 
+#### Requirements Posts
+- Clearly describe what you plan to create
+- Define clear objectives and goals
+- Include specific user stories with acceptance criteria
+- Use simple, clear language
+- Focus on user needs and outcomes
+
 ## Mermaid Diagram Guidelines
 
 ### Color Palette for Diagrams
@@ -541,6 +583,7 @@ graph TB
 - **Deployment Strategy**: CI/CD, environment management, rollback
 - **Code Review**: Code analysis, best practices, refactoring
 - **Tutorial**: Step-by-step guides, how-to content
+- **Requirements**: Requirements analysis, specifications, acceptance criteria
 - **Opinion**: Technical opinions, industry thoughts
 - **Research**: Technical research, findings, experiments
 
