@@ -1,13 +1,17 @@
 ---
 title: "Building a Full-Stack Property Management App: Single File Version"
-date: 2025-10-01
+date: 2025-09-01
 categories: [Learning, Full-Stack Development, Python]
 tags: [flask, sqlalchemy, property-management, full-stack, learning, web-development]
+content_type: "feature-development"
+learning_focus: ["single-file-architecture", "rapid-prototyping", "embedded-templates", "flask", "sqlalchemy"]
+difficulty: "intermediate"
 ---
 
 Hey there! 👋
 
 Today I want to share my experience building a comprehensive **Tenant Management App** - a full-stack web application that manages properties, tenants, and financial transactions. This project was a fantastic learning journey that taught me valuable lessons about modern web development, database design, and creating user-friendly interfaces.
+
 
 ## What I Built 🏗️
 
@@ -195,6 +199,14 @@ Even in a single-file application, maintaining clear separation between:
 - **Error handling** could be more user-friendly
 - **Testing** - would add unit and integration tests
 
+### Skills Gained
+- **Flask application architecture**
+- **SQLAlchemy ORM patterns**
+- **Modern CSS with utility frameworks**
+- **JavaScript DOM manipulation**
+- **RESTful API design**
+- **Data export functionality**
+
 ## The Code and Demo 🚀
 
 You can explore the complete codebase in my [GitHub repository](https://github.com/javiator/tenant-management-applications/tree/main/tenant-management-app). The app includes:
@@ -225,7 +237,7 @@ The application will:
 
 This project opened my eyes to several areas I want to explore further:
 
-- **Microservices Architecture**: Breaking this into smaller, focused services
+- **Modular Architecture**: Breaking this into smaller, focused services
 - **Real-time Updates**: Adding WebSocket support for live data updates
 - **Advanced Reporting**: More sophisticated analytics and reporting features
 - **Mobile App**: Building a companion mobile application
@@ -238,4 +250,5 @@ Building this tenant management app was an incredible learning experience. It ta
 The single-file approach, while not suitable for every project, was perfect for this use case. It allowed me to focus on learning the core concepts without getting bogged down in project structure decisions.
 
 If you're learning full-stack development, I highly recommend building a similar project. Start with a simple CRUD application and gradually add features. You'll be surprised how much you learn about both the technologies and the problem domain.
+
 

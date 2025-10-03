@@ -1,40 +1,42 @@
 ---
-title: "Projects"
+title: "Technical Content"
 permalink: /projects/
 ---
 
-Here are some of the projects I've been working on, showcasing my journey in full-stack development and enterprise architecture.
+A summary of my technical posts covering architecture, development, and learning insights.
 
-## 🏗️ Full-Stack Applications
+## 📚 All Posts
 
-### 🔹 Tenant Management App
-**A comprehensive property management solution built with Flask and modern web technologies.**
+### Architecture & System Design
+- **[Tenant Management System: Modular Monolith Architecture](/learning/architecture/tenant-management-system-architecture/)**  
+  *September 30, 2025* • Architecture Analysis • Intermediate  
+  Deep dive into the system architecture of a modular monolith, exploring component relationships and design patterns.
 
-- **Tech Stack**: Flask, SQLAlchemy, SQLite, Tailwind CSS, JavaScript
-- **Features**: Property & tenant management, transaction tracking, data export (CSV/Excel), responsive UI
-- **Architecture**: Single-file application design with embedded templates
-- **Learning Focus**: Full-stack development, database design, modern UI/UX
+- **[From Single-File to Modular Monolith: Refactoring the Tenant Management App](/learning/architecture/tenant-management-modular-monolith/)**  
+  *September 15, 2025* • Architecture Analysis • Intermediate  
+  Refactoring journey from a single-file application to a clean modular monolith architecture.
 
-*[Read the full case study →](/learning/full-stack%20development/python/tenant-management-app-singlefile/)*
+### Development & Implementation
+- **[Building a Full-Stack Property Management App: Single File Version](/learning/full-stack%20development/python/tenant-management-app-singlefile/)**  
+  *September 1, 2025* • Feature Development • Intermediate  
+  Complete full-stack web application built with Flask, SQLAlchemy, and modern web development practices.
 
----
+### Learning & Insights
+- **[Welcome to My Learning Journey!](/learning/architecture/welcome-to-my-blog/)**  
+  *August 30, 2025* • Opinion • Beginner  
+  Introduction to my learning journey and approach to sharing technical knowledge and experiences.
 
-## 🌐 Web Development
+## 🏷️ Content Overview
 
-### 🔹 Portfolio Website  
-**A personal blog + portfolio built using Jekyll and GitHub Pages.**
+**Total Posts:** 4  
+**Content Types:** Architecture Analysis (2), Feature Development (1), Opinion (1)  
+**Difficulty Levels:** Beginner (1), Intermediate (3)
 
-- **Tech Stack**: Jekyll, GitHub Pages, Minimal Mistakes theme
-- **Features**: Responsive design, blog functionality, project showcase
-- **Focus**: Content management, static site generation, developer experience
+## 🎯 Focus Areas
 
-*[View source →](https://github.com/javiator/javiator.github.io)*
+- **System Architecture**: Modular monoliths, component design, architectural patterns
+- **Full-Stack Development**: End-to-end application development with modern frameworks
+- **Learning & Growth**: Professional development and knowledge sharing
 
----
-
-## 🚀 What's Next
-
-I'm constantly working on new projects and learning opportunities. Check back regularly for updates on my latest work in enterprise architecture, cloud solutions, and full-stack development.
-
-*Interested in collaborating or discussing any of these projects? [Get in touch!](/about/)*
+*Browse all posts by [category](/posts/) or [tag](/tags/).*
 
