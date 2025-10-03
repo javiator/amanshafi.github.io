@@ -28,11 +28,52 @@ custom_css:
 # Add custom head content
 head:
   - '<style>
-      article.page { max-width: 1280px !important; padding-right: 0 !important; }
-      .page__content { max-width: 1280px !important; }
-      article.page .page__content { max-width: 1280px !important; }
-      .initial-content > div { max-width: 1280px !important; }
-      .layout--single article.page { padding-right: 0 !important; }
+      /* Content area - narrower for better reading */
+      .page__content { 
+        max-width: 700px !important; 
+        margin-right: 0 !important;
+      }
+      article.page .page__content { 
+        max-width: 700px !important; 
+      }
+      
+      /* TOC sidebar - improved spacing */
+      .sidebar__right { 
+        margin-left: 30px !important;
+        width: 250px !important;
+        min-width: 250px !important;
+        background: #f8f9fa !important;
+        border: 1px solid #e9ecef !important;
+        border-radius: 6px !important;
+        padding: 15px !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+      }
+      
+      /* TOC styling */
+      .toc { 
+        font-size: 14px !important; 
+        line-height: 1.4 !important;
+      }
+      .toc__menu { 
+        padding-left: 0 !important; 
+        margin-top: 10px !important;
+        list-style: none !important;
+      }
+      .toc__menu li {
+        margin-bottom: 5px !important;
+      }
+      .toc__menu a {
+        padding: 5px 8px !important;
+        display: block !important;
+        text-decoration: none !important;
+        color: #495057 !important;
+        border-radius: 3px !important;
+        transition: background-color 0.2s !important;
+      }
+      .toc__menu a:hover {
+        background-color: #e9ecef !important;
+        color: #212529 !important;
+      }
       
       /* Force header and title font sizes to match content headings */
       .navigation a[href="/"] { font-size: 28px !important; }
@@ -55,6 +96,15 @@ head:
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -124,6 +174,9 @@ defaults:
       comments: false
       share: true
       related: true
+      toc: true
+      toc_label: "Table of Contents"
+      toc_icon: "list"
   # _pages
   - scope:
       path: "_pages"
@@ -131,6 +184,9 @@ defaults:
     values:
       layout: single
       author_profile: true
+      toc: true
+      toc_label: "Table of Contents"
+      toc_icon: "list"
 
 
 category_archive:
