@@ -87,3 +87,32 @@ layout: default
 </div>
 
 {% include mermaid.html %}
+
+<!-- Back to top button -->
+<button id="back-to-top" title="Back to top" aria-label="Back to top">
+  ↑ Top
+</button>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var backToTopButton = document.getElementById('back-to-top');
+
+  // Show/hide button based on scroll position
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 300) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  // Smooth scroll to top when clicked
+  backToTopButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+</script>

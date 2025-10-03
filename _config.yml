@@ -25,73 +25,10 @@ search: true
 custom_css:
   - "/assets/css/main.scss"
 
-# Add custom head content
+# Custom head content - minimal CSS only for specific overrides
 head:
   - '<style>
-      /* Content area - narrower for better reading */
-      .page__content { 
-        max-width: 700px !important; 
-        margin-right: 0 !important;
-      }
-      article.page .page__content { 
-        max-width: 700px !important; 
-      }
-      
-      /* TOC sidebar - improved spacing */
-      .sidebar__right { 
-        margin-left: 30px !important;
-        width: 250px !important;
-        min-width: 250px !important;
-        background: #f8f9fa !important;
-        border: 1px solid #e9ecef !important;
-        border-radius: 6px !important;
-        padding: 15px !important;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
-      }
-      
-      /* TOC styling */
-      .toc { 
-        font-size: 14px !important; 
-        line-height: 1.4 !important;
-      }
-      .toc__menu { 
-        padding-left: 0 !important; 
-        margin-top: 10px !important;
-        list-style: none !important;
-      }
-      .toc__menu li {
-        margin-bottom: 5px !important;
-      }
-      .toc__menu a {
-        padding: 5px 8px !important;
-        display: block !important;
-        text-decoration: none !important;
-        color: #495057 !important;
-        border-radius: 3px !important;
-        transition: background-color 0.2s !important;
-      }
-      .toc__menu a:hover {
-        background-color: #e9ecef !important;
-        color: #212529 !important;
-      }
-      
-      /* Force header and title font sizes to match content headings */
-      .navigation a[href="/"] { font-size: 28px !important; }
-      h2 a { font-size: 24px !important; }
-      h3 { font-size: 22px !important; }
-      .entry__title { font-size: 24px !important; }
-      .entry__title a { font-size: 24px !important; }
-      .archive__item-title { font-size: 24px !important; }
-      .site__title { font-size: 28px !important; }
-      .navigation { font-size: 20px !important; }
-      .navigation .nav__list { font-size: 20px !important; }
-      
-      /* More specific targeting for post titles */
-      .archive__item h2 a { font-size: 24px !important; }
-      .archive__item .entry__title a { font-size: 24px !important; }
-      .archive__item h2 { font-size: 24px !important; }
-      .archive__item .entry__title { font-size: 24px !important; }
-      .archive__item h2 a, .archive__item h2 { font-size: 24px !important; }
+      /* Additional specific overrides if needed */
     </style>'
 
 # Build settings
