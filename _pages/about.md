@@ -5,7 +5,7 @@ permalink: /about/
 
 Hi, I'm **Aman Shafi** 👋  
 
-I'm an **Enterprise & Solution Architecture Leader** based in London, UK, with a passion for building scalable digital solutions and sharing knowledge.
+I'm a **TOGAF Certified Enterprise & Solution Architecture Leader** based in London, UK, with a passion for building scalable digital solutions and sharing knowledge.
 
 ## What I Do
 
@@ -13,6 +13,15 @@ I'm an **Enterprise & Solution Architecture Leader** based in London, UK, with a
 - ☁️ **Cloud & AI**: Specializing in AWS Cloud Architecture and emerging AI/LLM/ML applications  
 - 🎯 **Adobe Experience Cloud**: Deep expertise in AEM, Target, and Analytics
 - 🏗️ **Full-Stack Development**: Building end-to-end solutions from concept to deployment
+
+## Certifications
+
+- 🏛️ **Open Group Certified**: TOGAF Enterprise Architecture Foundation & Practitioner
+- ☁️ **AWS Certified**: Solutions Architect – Associate
+- ☁️ **AWS Certified**: Developer – Associate
+- ☁️ **AWS Certified**: AI Practitioner
+- ☁️ **AWS Certified**: Machine Learning Engineer – Associate
+- 🎨 **Adobe Certified**: AEM/CQ5 CMS Architect & Business Practitioner
 
 ## Current Focus
 
