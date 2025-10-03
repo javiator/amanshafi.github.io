@@ -6,6 +6,9 @@ tags: [requirements, objectives, user-stories, tenant-management, property-manag
 content_type: "requirements"
 learning_focus: ["requirements-analysis", "project-planning"]
 difficulty: "beginner"
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "list"
 ---
 
 Hey there! 👋

@@ -4,35 +4,78 @@
 @import "minimal-mistakes/skins/air"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Make only the central post content area wider - 1280px width
-article.page {
-  max-width: 1280px !important;
-  padding-right: 0 !important;
+// Back to top button - positioned at right edge with content area limit
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  width: auto;
+  min-width: 80px;
+  height: 50px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 44px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 0 15px;
+  white-space: nowrap;
 }
 
-// Target the main content text area specifically
-.page__content {
-  max-width: 1280px !important;
+// Limit button position on wide screens (max 1200px content area)
+@media (min-width: 1200px) {
+  #back-to-top {
+    right: calc(50vw - 600px + 30px); /* Position relative to 1200px content area */
+  }
 }
 
-// Also target any content within the article
-article.page .page__content {
-  max-width: 1280px !important;
+#back-to-top:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.6);
+  border-color: #e3f2fd;
+  min-width: 90px;
 }
 
-// Override the parent div that's constraining the width
-.initial-content > div {
-  max-width: 1280px !important;
+#back-to-top:active {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5);
 }
 
-// Remove any sidebar padding that's constraining the content
-.layout--single article.page {
-  padding-right: 0 !important;
+// Mobile responsive - ensure visibility and proper positioning
+@media (max-width: 768px) {
+  #back-to-top {
+    bottom: 20px !important;
+    right: 20px !important;
+    left: auto !important;
+    min-width: 70px !important;
+    height: 45px !important;
+    line-height: 39px !important;
+    font-size: 12px !important;
+    border-width: 2px !important;
+    padding: 0 12px !important;
+    display: block !important; /* Force visibility for testing */
+    z-index: 9999 !important; /* Higher z-index */
+    background: linear-gradient(135deg, #007bff, #0056b3) !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    border-radius: 22px !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4) !important;
+  }
 }
 
 // Make fonts a bit larger for better readability (excluding left sidebar)
 body {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 
 // Target main content area and navigation (excluding sidebar)
@@ -76,14 +119,14 @@ body {
 #main p,
 .page__content p,
 .entry-content p {
-  font-size: 16px !important;
-  line-height: 1.5 !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
 }
 
 #main li,
 .page__content li,
 .entry-content li {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 
 #main code,

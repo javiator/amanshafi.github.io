@@ -25,36 +25,23 @@ search: true
 custom_css:
   - "/assets/css/main.scss"
 
-# Add custom head content
+# Custom head content - minimal CSS only for specific overrides
 head:
   - '<style>
-      article.page { max-width: 1280px !important; padding-right: 0 !important; }
-      .page__content { max-width: 1280px !important; }
-      article.page .page__content { max-width: 1280px !important; }
-      .initial-content > div { max-width: 1280px !important; }
-      .layout--single article.page { padding-right: 0 !important; }
-      
-      /* Force header and title font sizes to match content headings */
-      .navigation a[href="/"] { font-size: 28px !important; }
-      h2 a { font-size: 24px !important; }
-      h3 { font-size: 22px !important; }
-      .entry__title { font-size: 24px !important; }
-      .entry__title a { font-size: 24px !important; }
-      .archive__item-title { font-size: 24px !important; }
-      .site__title { font-size: 28px !important; }
-      .navigation { font-size: 20px !important; }
-      .navigation .nav__list { font-size: 20px !important; }
-      
-      /* More specific targeting for post titles */
-      .archive__item h2 a { font-size: 24px !important; }
-      .archive__item .entry__title a { font-size: 24px !important; }
-      .archive__item h2 { font-size: 24px !important; }
-      .archive__item .entry__title { font-size: 24px !important; }
-      .archive__item h2 a, .archive__item h2 { font-size: 24px !important; }
+      /* Additional specific overrides if needed */
     </style>'
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -124,6 +111,9 @@ defaults:
       comments: false
       share: true
       related: true
+      toc: true
+      toc_label: "Table of Contents"
+      toc_icon: "list"
   # _pages
   - scope:
       path: "_pages"
@@ -131,6 +121,9 @@ defaults:
     values:
       layout: single
       author_profile: true
+      toc: true
+      toc_label: "Table of Contents"
+      toc_icon: "list"
 
 
 category_archive:

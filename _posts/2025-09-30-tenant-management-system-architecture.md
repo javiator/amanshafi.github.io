@@ -6,6 +6,9 @@ tags: [modular-monolith, system-architecture, component-architecture, learning]
 content_type: "architecture-analysis"
 learning_focus: ["modular-monolith", "layered-architecture", "separation-of-concerns", "system-design"]
 difficulty: "intermediate"
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "list"
 ---
 
 Hey there! 👋
@@ -13,7 +16,6 @@ Hey there! 👋
 Building on our [modular monolith evolution](2025-09-15-tenant-management-modular-monolith.md), today I want to dive deep into the **system architecture** of the Tenant Management System. This post explores the architectural decisions, component relationships, and design patterns that make this modular monolith scalable and maintainable.
 
 > **📋 Requirements Context**: This system architecture is designed to fulfill the requirements outlined in [Landlord-Tenant Management System: Requirements and Objectives](2025-08-31-tenant-management-requirements.md). The requirements post provides the business context and user stories that informed these architectural decisions.
-
 
 ## System Architecture Overview 🏗️
 
