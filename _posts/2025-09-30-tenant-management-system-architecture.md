@@ -8,13 +8,13 @@ learning_focus: ["modular-monolith", "layered-architecture", "separation-of-conc
 difficulty: "intermediate"
 ---
 
-Hey there! 👋
+Hey there!
 
 Building on our [modular monolith evolution](/learning/architecture/system%20design/tenant-management-modular-monolith/), today I want to dive deep into the **system architecture** of the Tenant Management System. This post explores the architectural decisions, component relationships, and design patterns that make this modular monolith scalable and maintainable.
 
 > **📋 Requirements Context**: This system architecture is designed to fulfill the requirements outlined in [Landlord-Tenant Management System: Requirements and Objectives](/learning/requirements/analysis/tenant-management-requirements/). The requirements post provides the business context and user stories that informed these architectural decisions.
 
-## System Architecture Overview 🏗️
+## System Architecture Overview
 
 The Tenant Management System follows a **modular monolith architecture** with clear separation of concerns while maintaining a single deployment unit and shared database.
 
@@ -83,7 +83,7 @@ graph TB
     class SQLITE,BACKUP database
 ```
 
-## Modular Monolith Architecture 🎯
+## Modular Monolith Architecture
 
 ### Core Architectural Principles
 
@@ -142,7 +142,7 @@ def get_tenants(db: Session = Depends(get_db)):
     return TenantService.get_all_tenants(db)
 ```
 
-## Component Architecture 🔧
+## Component Architecture
 
 ### Frontend Architecture (React SPA)
 
@@ -276,7 +276,7 @@ erDiagram
     }
 ```
 
-## API Architecture 🌐
+## API Architecture
 
 ### RESTful API Design
 Consistent API endpoints across both backends:
@@ -346,7 +346,7 @@ def get_tenants(
     return TenantService.get_all_tenants(db)
 ```
 
-## Development Architecture 🛠️
+## Development Architecture
 
 ### Development Workflow
 ```bash
@@ -373,7 +373,7 @@ class Config:
         app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 ```
 
-## Why Modular Monolith? 🎯
+## Why Modular Monolith?
 
 ### Benefits of This Architecture
 
@@ -410,7 +410,7 @@ class Config:
 - ❌ Scaling limitations
 - ❌ Team coordination challenges
 
-## Scalability Considerations 🚀
+## Scalability Considerations
 
 ### Current Scalability
 - **Vertical Scaling**: Add more CPU/memory to single instance
@@ -456,7 +456,7 @@ graph LR
     class G,H,I,J database
 ```
 
-## Key Architectural Decisions 🎯
+## Key Architectural Decisions
 
 ### 1. **Why Modular Monolith Over Microservices?**
 - **Simplicity**: Easier to develop, test, and deploy
@@ -498,7 +498,7 @@ class TenantService:
         return response.json()
 ```
 
-## Key Takeaways 💡
+## Key Takeaways
 
 ### What I Learned About Modular Monolith Architecture
 1. **Clean Architecture**: Proper separation of concerns within a monolith
@@ -513,7 +513,7 @@ class TenantService:
 - **Database Architecture**: Shared database with module boundaries
 - **Development Workflow**: Coordinating multiple services
 
-## The Architecture in Practice 🚀
+## The Architecture in Practice
 
 You can explore the architectural decisions in the codebase:
 - **Modular Structure**: [`tenant-management-modular/`](https://github.com/javiator/tenant-management-applications/tree/main/tenant-management-modular)
@@ -521,10 +521,10 @@ You can explore the architectural decisions in the codebase:
 - **API Design**: RESTful endpoints in `routes.py`
 - **Database Models**: SQLAlchemy models in `models.py`
 
-## Final Thoughts 🤔
+## Final Thoughts
 
 The modular monolith architecture provides the perfect balance between **simplicity and structure**. It gives us clean separation of concerns without the operational complexity of microservices, making it an excellent stepping stone for learning clean architecture principles.
 
 The dual backend implementation (Flask + FastAPI) demonstrates how the same business logic can be exposed through different frameworks, providing valuable insights into API design and framework comparison.
 
-**Next up**: I'll dive deeper into the component architecture, exploring the internal design of individual modules and how they implement the business logic - stay tuned! 🚀
+**Next up**: I'll dive deeper into the component architecture, exploring the internal design of individual modules and how they implement the business logic - stay tuned!
