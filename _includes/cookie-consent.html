@@ -363,7 +363,8 @@
   
   // Check if consent has been given
   function hasConsent() {
-    return getCookie('cookie-consent') === 'accepted';
+    const consent = getCookie('cookie-consent');
+    return consent === 'accepted' || consent === 'custom' || consent === 'declined';
   }
   
   // Show/hide Google Analytics based on consent
@@ -382,14 +383,41 @@
     }
   }
   
+  // Debug function to check cookie status
+  function debugCookies() {
+    console.log('Cookie Debug Info:');
+    console.log('cookie-consent:', getCookie('cookie-consent'));
+    console.log('analytics-cookies:', getCookie('analytics-cookies'));
+    console.log('preference-cookies:', getCookie('preference-cookies'));
+    console.log('hasConsent():', hasConsent());
+  }
+  
   // Initialize cookie consent
   function initCookieConsent() {
     const banner = document.getElementById('cookie-consent-banner');
     const modal = document.getElementById('cookie-settings-modal');
     
+    // Check if elements exist
+    if (!banner || !modal) {
+      console.error('Cookie consent elements not found');
+      return;
+    }
+    
+    // Debug cookies
+    debugCookies();
+    
     // Show banner if no consent given
     if (!hasConsent()) {
       banner.style.display = 'block';
+      console.log('Showing cookie banner - no consent found');
+    } else {
+      banner.style.display = 'none';
+      console.log('Hiding cookie banner - consent found');
+      // Apply saved analytics consent
+      const analyticsConsent = getCookie('analytics-cookies');
+      if (analyticsConsent === 'true') {
+        toggleAnalytics(true);
+      }
     }
     
     // Banner event listeners
@@ -399,6 +427,7 @@
       setCookie('preference-cookies', 'true', 365);
       banner.style.display = 'none';
       toggleAnalytics(true);
+      console.log('Cookies accepted');
     });
     
     document.getElementById('cookie-decline').addEventListener('click', function() {
@@ -407,6 +436,7 @@
       setCookie('preference-cookies', 'false', 365);
       banner.style.display = 'none';
       toggleAnalytics(false);
+      console.log('Cookies declined');
     });
     
     document.getElementById('cookie-settings').addEventListener('click', function() {
@@ -456,6 +486,15 @@
       toggleAnalytics(true);
     }
   }
+  
+  // Add global debug function for testing
+  window.clearCookieConsent = function() {
+    deleteCookie('cookie-consent');
+    deleteCookie('analytics-cookies');
+    deleteCookie('preference-cookies');
+    console.log('All cookie consent cookies cleared');
+    location.reload();
+  };
   
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
