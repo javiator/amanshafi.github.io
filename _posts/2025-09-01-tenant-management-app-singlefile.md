@@ -234,7 +234,7 @@ The application will:
 - Start a development server on `http://127.0.0.1:5000`
 - Provide a complete web interface for property management
 
-## What's Next? 🔮
+## What's Next?
 
 This project opened my eyes to several areas I want to explore further:
 

@@ -209,7 +209,7 @@ fastapi_backend/
 └── schemas.py          # Pydantic schemas
 ```
 
-## Data Architecture 📊
+## Data Architecture
 
 ### Shared Database Pattern
 The modular monolith uses a single SQLite database shared across all modules:
@@ -476,7 +476,7 @@ graph LR
 - **Performance**: No distributed transaction complexity
 - **Development**: Easy to set up and test
 
-## Future Architecture Evolution 🔮
+## Future Architecture Evolution
 
 ### Planned Enhancements
 - **Service Extraction**: Extract services as they grow

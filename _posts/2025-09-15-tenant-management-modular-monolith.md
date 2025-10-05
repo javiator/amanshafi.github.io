@@ -24,7 +24,7 @@ After building the single-file version (1,655 lines!), I quickly hit some walls:
 
 The solution? **Modular Monolith Architecture** - a stepping stone toward microservices that gives you the benefits of separation without the complexity.
 
-## The Architecture Evolution 🔄
+## The Architecture Evolution
 
 ### Before: Single File (1,655 lines)
 Everything mixed together in one `app.py` file:
