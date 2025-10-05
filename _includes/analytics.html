@@ -1,0 +1,29 @@
+{% if site.google_analytics %}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  
+  // Set default consent state (denied until user accepts)
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted'
+  });
+  
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}', {
+    'anonymize_ip': true,
+    'allow_google_signals': false,
+    'allow_ad_personalization_signals': false
+  });
+</script>
+{% endif %}
+
+{% if site.google_site_verification %}
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+{% endif %}

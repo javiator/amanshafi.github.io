@@ -21,6 +21,10 @@ github_username: javiator
 minimal_mistakes_skin: air
 search: true
 
+# Analytics
+google_analytics: # Replace with your GA4 measurement ID (e.g., G-XXXXXXXXXX)
+google_site_verification: # Replace with your Google Search Console verification code
+
 # Custom CSS
 custom_css:
   - "/assets/css/main.scss"
@@ -98,6 +102,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/javiator"
+    - label: "Privacy Policy"
+      icon: "fas fa-fw fa-shield-alt"
+      url: "/privacy-policy/"
 
 defaults:
   - scope:
