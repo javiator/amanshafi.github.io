@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Test</title>
+</head>
+<body>
+    <h1>Cookie Consent Test</h1>
+    <p>This page tests if the cookie consent banner appears.</p>
+    
+    <script>
+        // Check if cookie consent elements exist
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                const banner = document.getElementById('cookie-consent-banner');
+                if (banner) {
+                    console.log('✅ Cookie consent banner found');
+                    banner.style.display = 'block'; // Force show for testing
+                } else {
+                    console.log('❌ Cookie consent banner NOT found');
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -35,9 +35,6 @@ head:
       /* Additional specific overrides if needed */
     </style>'
   - '{% include analytics.html %}'
-
-# Custom after body content - add cookie consent to all pages
-after_body:
   - '{% include cookie-consent.html %}'
 
 
@@ -111,6 +108,10 @@ footer:
     - label: "Privacy Policy"
       icon: "fas fa-fw fa-shield-alt"
       url: "/privacy-policy/"
+
+# Custom footer content
+footer_custom:
+  - '{% include cookie-consent.html %}'
 
 
 defaults:

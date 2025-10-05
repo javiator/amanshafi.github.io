@@ -394,14 +394,20 @@
   
   // Initialize cookie consent
   function initCookieConsent() {
+    console.log('🍪 Initializing cookie consent...');
+    
     const banner = document.getElementById('cookie-consent-banner');
     const modal = document.getElementById('cookie-settings-modal');
     
     // Check if elements exist
     if (!banner || !modal) {
-      console.error('Cookie consent elements not found');
+      console.error('❌ Cookie consent elements not found');
+      console.log('Banner element:', banner);
+      console.log('Modal element:', modal);
       return;
     }
+    
+    console.log('✅ Cookie consent elements found');
     
     // Debug cookies
     debugCookies();
@@ -508,6 +514,8 @@
   };
   
   // Initialize when DOM is ready
+  console.log('🍪 Cookie consent script loaded');
+  
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initCookieConsent);
   } else {
