@@ -1,0 +1,5 @@
+<!-- Cloudflare Web Analytics -->
+{% if site.analytics.provider == "cloudflare" and site.analytics.cloudflare.token %}
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{ site.analytics.cloudflare.token }}"}'></script>
+{% endif %}
+
