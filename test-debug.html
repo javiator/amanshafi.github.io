@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Test</title>
+</head>
+<body>
+    <h1>Debug Test Page</h1>
+    <p>This page tests if the debug functions are available.</p>
+    
+    <div id="cookie-consent-banner" class="cookie-consent-banner" style="display: none;">
+      <div class="cookie-consent-content">
+        <div class="cookie-consent-text">
+          <h4>Cookie Notice</h4>
+          <p>We use cookies to analyze site traffic and improve your experience.</p>
+        </div>
+        <div class="cookie-consent-buttons">
+          <button id="cookie-accept" class="btn btn--primary btn--small">Accept All</button>
+          <button id="cookie-decline" class="btn btn--small">Decline</button>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+        // Test if debug functions exist
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Testing debug functions...');
+            
+            if (typeof window.debugCookies === 'function') {
+                console.log('✅ debugCookies function found');
+                window.debugCookies();
+            } else {
+                console.log('❌ debugCookies function NOT found');
+            }
+            
+            if (typeof window.clearCookieConsent === 'function') {
+                console.log('✅ clearCookieConsent function found');
+            } else {
+                console.log('❌ clearCookieConsent function NOT found');
+            }
+            
+            // Check if cookie consent elements exist
+            const banner = document.getElementById('cookie-consent-banner');
+            if (banner) {
+                console.log('✅ Cookie banner element found');
+            } else {
+                console.log('❌ Cookie banner element NOT found');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -238,6 +238,11 @@ head:
           location.reload();
         };
         
+        // Test function availability
+        console.log("🍪 Cookie consent functions loaded:");
+        console.log("debugCookies:", typeof window.debugCookies);
+        console.log("clearCookieConsent:", typeof window.clearCookieConsent);
+        
       })();
     </script>'
 
