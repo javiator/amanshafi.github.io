@@ -93,22 +93,17 @@ author:
   location: "London, UK"
   links:
     - label: "Website"
-      icon: "fas fa-fw fa-link"
       url: "https://javiator.github.io"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/amans82/"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
       url: "https://github.com/javiator"
 
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/amans82/"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
       url: "https://github.com/javiator"
 
 defaults:

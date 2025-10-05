@@ -5,11 +5,11 @@ categories: [Learning, Full-Stack Development, Python]
 tags: [flask, sqlalchemy, property-management, full-stack, learning, web-development]
 ---
 
-Hey there! 👋
+Hey there!
 
 Today I want to share my experience building a comprehensive **Tenant Management App** - a full-stack web application that manages properties, tenants, and financial transactions. This project was a fantastic learning journey that taught me valuable lessons about modern web development, database design, and creating user-friendly interfaces.
 
-## What I Built 🏗️
+## What I Built
 
 The **Tenant Management App** is a single-file Flask application that provides a complete property management solution. Here's what it does:
 
@@ -28,7 +28,7 @@ The **Tenant Management App** is a single-file Flask application that provides a
 - **Styling**: Tailwind CSS for modern, responsive design
 - **Data Export**: OpenPyXL for Excel reports, CSV for data export
 
-## Key Learning Experiences 📚
+## Key Learning Experiences
 
 ### 1. **Single-File Application Design**
 One of the most interesting aspects of this project was building everything in a single `app.py` file. This approach taught me:
@@ -112,7 +112,7 @@ Using Tailwind CSS showed me:
 - **Component Patterns**: Reusable UI patterns without component frameworks
 - **Custom Styling**: When and how to add custom CSS alongside utility classes
 
-## Technical Challenges and Solutions 🔧
+## Technical Challenges and Solutions
 
 ### Challenge 1: Complex Form Interactions
 **Problem**: The transaction form needed to dynamically populate property options based on selected tenant.
@@ -154,7 +154,7 @@ def export_transactions_csv():
 
 **Solution**: Client-side pagination with server-side data fetching and filtering logic.
 
-## What I Learned About Full-Stack Development 🎯
+## What I Learned About Full-Stack Development
 
 ### 1. **Separation of Concerns**
 Even in a single-file application, maintaining clear separation between:
@@ -181,7 +181,7 @@ Even in a single-file application, maintaining clear separation between:
 - Lazy loading of related data
 - Optimized API responses
 
-## Key Takeaways 💡
+## Key Takeaways
 
 ### What Worked Well
 - **Single-file approach** for rapid development and easy deployment
@@ -195,7 +195,7 @@ Even in a single-file application, maintaining clear separation between:
 - **Error handling** could be more user-friendly
 - **Testing** - would add unit and integration tests
 
-## The Code and Demo 🚀
+## The Code and Demo
 
 You can explore the complete codebase in my [GitHub repository](https://github.com/javiator/learn_ai/tree/main/tenant-management-app). The app includes:
 
@@ -221,7 +221,7 @@ The application will:
 - Start a development server on `http://127.0.0.1:5000`
 - Provide a complete web interface for property management
 
-## What's Next? 🔮
+## What's Next?
 
 This project opened my eyes to several areas I want to explore further:
 
@@ -231,7 +231,7 @@ This project opened my eyes to several areas I want to explore further:
 - **Mobile App**: Building a companion mobile application
 - **Cloud Deployment**: Deploying to cloud platforms with proper CI/CD
 
-## Final Thoughts 🤔
+## Final Thoughts
 
 Building this tenant management app was an incredible learning experience. It taught me that you don't need complex frameworks to build powerful, user-friendly applications. Sometimes, the best approach is to start simple and let the requirements guide your architecture decisions.
 

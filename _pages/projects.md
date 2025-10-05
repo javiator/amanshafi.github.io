@@ -5,9 +5,9 @@ permalink: /projects/
 
 Here are some of the projects I've been working on, showcasing my journey in full-stack development and enterprise architecture.
 
-## 🏗️ Full-Stack Applications
+## Full-Stack Applications
 
-### 🔹 Tenant Management App
+### Tenant Management App
 **A comprehensive property management solution built with Flask and modern web technologies.**
 
 - **Tech Stack**: Flask, SQLAlchemy, SQLite, Tailwind CSS, JavaScript
@@ -19,9 +19,9 @@ Here are some of the projects I've been working on, showcasing my journey in ful
 
 ---
 
-## 🌐 Web Development
+## Web Development
 
-### 🔹 Portfolio Website  
+### Portfolio Website  
 **A personal blog + portfolio built using Jekyll and GitHub Pages.**
 
 - **Tech Stack**: Jekyll, GitHub Pages, Minimal Mistakes theme
@@ -32,7 +32,7 @@ Here are some of the projects I've been working on, showcasing my journey in ful
 
 ---
 
-## 🚀 What's Next
+## What's Next
 
 I'm constantly working on new projects and learning opportunities. Check back regularly for updates on my latest work in enterprise architecture, cloud solutions, and full-stack development.
 
