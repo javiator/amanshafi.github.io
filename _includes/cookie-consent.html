@@ -417,6 +417,10 @@
       const analyticsConsent = getCookie('analytics-cookies');
       if (analyticsConsent === 'true') {
         toggleAnalytics(true);
+        console.log('Analytics enabled from saved consent');
+      } else if (analyticsConsent === 'false') {
+        toggleAnalytics(false);
+        console.log('Analytics disabled from saved consent');
       }
     }
     
@@ -459,6 +463,7 @@
       banner.style.display = 'none';
       modal.style.display = 'none';
       toggleAnalytics(analytics);
+      console.log('Custom settings saved - Analytics:', analytics, 'Preferences:', preferences);
     });
     
     document.getElementById('cookie-accept-all').addEventListener('click', function() {
@@ -481,10 +486,7 @@
       document.getElementById('preference-cookies').checked = preferencesConsent === 'true';
     }
     
-    // Apply saved analytics consent
-    if (analyticsConsent === 'true') {
-      toggleAnalytics(true);
-    }
+    // Apply saved analytics consent (this is handled above in the main logic)
   }
   
   // Add global debug function for testing
@@ -493,6 +495,15 @@
     deleteCookie('analytics-cookies');
     deleteCookie('preference-cookies');
     console.log('All cookie consent cookies cleared');
+    location.reload();
+  };
+  
+  // Test function for custom settings
+  window.testCustomSettings = function() {
+    setCookie('cookie-consent', 'custom', 365);
+    setCookie('analytics-cookies', 'false', 365);
+    setCookie('preference-cookies', 'false', 365);
+    console.log('Test: Set custom settings with only essential cookies');
     location.reload();
   };
   
