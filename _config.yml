@@ -74,6 +74,12 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# Analytics
+analytics:
+  provider: "cloudflare"
+  cloudflare:
+    token: "3d87496e683b4f82894de052683d46b2"  # Replace with your actual token
+
 author:
   name   : "Aman"
   avatar : "/assets/images/bio-photo.jpg"
