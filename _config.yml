@@ -34,6 +34,11 @@ head:
   - '<style>
       /* Additional specific overrides if needed */
     </style>'
+  - '{% include analytics.html %}'
+
+# Custom body content - add cookie consent to all pages
+body:
+  - '{% include cookie-consent.html %}'
 
 # Build settings
 markdown: kramdown
@@ -105,6 +110,7 @@ footer:
     - label: "Privacy Policy"
       icon: "fas fa-fw fa-shield-alt"
       url: "/privacy-policy/"
+
 
 defaults:
   - scope:

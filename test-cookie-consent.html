@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Consent Test</title>
+</head>
+<body>
+    <h1>Cookie Consent Test Page</h1>
+    <p>This page tests if the cookie consent banner appears on all layouts.</p>
+    
+    <h2>Test Links:</h2>
+    <ul>
+        <li><a href="/">Home Page (index.md)</a></li>
+        <li><a href="/about/">About Page (single layout)</a></li>
+        <li><a href="/projects/">Projects Page (single layout)</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy (single layout)</a></li>
+        <li><a href="/posts/">Posts Archive (posts layout)</a></li>
+        <li><a href="/tags/">Tags Archive (tags layout)</a></li>
+        <li><a href="/categories/">Categories Archive (categories layout)</a></li>
+    </ul>
+    
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Clear your browser cookies</li>
+        <li>Visit each link above</li>
+        <li>Verify that the cookie consent banner appears on each page</li>
+        <li>Accept cookies on one page</li>
+        <li>Visit other pages - banner should not appear</li>
+    </ol>
+    
+    <script>
+        // Test if cookie consent elements exist
+        document.addEventListener('DOMContentLoaded', function() {
+            const banner = document.getElementById('cookie-consent-banner');
+            const modal = document.getElementById('cookie-settings-modal');
+            
+            if (banner && modal) {
+                console.log('✅ Cookie consent elements found on this page');
+            } else {
+                console.log('❌ Cookie consent elements NOT found on this page');
+            }
+        });
+    </script>
+</body>
+</html>
