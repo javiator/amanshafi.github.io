@@ -32,9 +32,6 @@ custom_css:
 # Custom head content
 head:
   - '{% include analytics.html %}'
-
-# Custom body content - add cookie banner HTML
-after_body:
   - '{% include cookie-consent.html %}'
 
 

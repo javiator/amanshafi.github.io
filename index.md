@@ -44,3 +44,6 @@ I'd love to hear from you! Feel free to:
 Thanks for joining me on this learning adventure!
 
 *P.S. – This is a journey, not a destination. Let's learn and grow together!*
+
+<!-- Cookie Consent Banner -->
+{% include cookie-banner.html %}

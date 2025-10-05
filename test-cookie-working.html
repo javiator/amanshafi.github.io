@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Banner Test - Working Check</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-info { background: #f0f0f0; padding: 15px; margin: 20px 0; border-radius: 5px; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+    </style>
+</head>
+<body>
+    <h1>🍪 Cookie Banner Working Test</h1>
+    
+    <div class="test-info">
+        <h3>Current Setup:</h3>
+        <ul>
+            <li>CSS and JavaScript loaded via <code>head</code> configuration</li>
+            <li>HTML banner added to individual pages via <code>{% include cookie-banner.html %}</code></li>
+            <li>Added to: home page, single layout, category archive, tag archive, posts archive</li>
+        </ul>
+    </div>
+    
+    <div id="test-results" class="test-info">
+        <h3>Test Results:</h3>
+        <div id="banner-test" class="status">Checking for cookie banner...</div>
+        <div id="script-test" class="status">Checking for JavaScript functions...</div>
+        <div id="elements-test" class="status">Checking for banner elements...</div>
+    </div>
+    
+    <div class="test-info">
+        <h3>Manual Tests:</h3>
+        <ol>
+            <li>Clear browser cookies for this site</li>
+            <li>Refresh the page</li>
+            <li>Look for cookie banner at bottom of page</li>
+            <li>Open browser console and run <code>debugCookies()</code></li>
+            <li>Try clicking Accept/Decline/Settings buttons</li>
+        </ol>
+    </div>
+    
+    <p><a href="/">← Back to Home</a></p>
+    
+    <script>
+        // Test if cookie banner is working
+        function runTests() {
+            const results = document.getElementById('test-results');
+            
+            // Test 1: Check if banner element exists
+            const banner = document.getElementById('cookie-consent-banner');
+            const bannerTest = document.getElementById('banner-test');
+            if (banner) {
+                bannerTest.className = 'status success';
+                bannerTest.innerHTML = '✅ Cookie banner element found';
+            } else {
+                bannerTest.className = 'status error';
+                bannerTest.innerHTML = '❌ Cookie banner element not found';
+            }
+            
+            // Test 2: Check if debug functions exist
+            const scriptTest = document.getElementById('script-test');
+            if (typeof window.debugCookies === 'function') {
+                scriptTest.className = 'status success';
+                scriptTest.innerHTML = '✅ Debug functions loaded';
+            } else {
+                scriptTest.className = 'status error';
+                scriptTest.innerHTML = '❌ Debug functions not loaded';
+            }
+            
+            // Test 3: Check for all required elements
+            const elementsTest = document.getElementById('elements-test');
+            const requiredElements = [
+                'cookie-accept',
+                'cookie-decline', 
+                'cookie-settings',
+                'cookie-settings-modal'
+            ];
+            
+            const missingElements = requiredElements.filter(id => !document.getElementById(id));
+            
+            if (missingElements.length === 0) {
+                elementsTest.className = 'status success';
+                elementsTest.innerHTML = '✅ All required elements found';
+            } else {
+                elementsTest.className = 'status error';
+                elementsTest.innerHTML = '❌ Missing elements: ' + missingElements.join(', ');
+            }
+        }
+        
+        // Run tests when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', runTests);
+        } else {
+            runTests();
+        }
+    </script>
+</body>
+</html>
