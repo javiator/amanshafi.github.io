@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Banner Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-info { background: #f0f0f0; padding: 15px; margin: 20px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Cookie Banner Test Page</h1>
+    
+    <div class="test-info">
+        <h3>Testing Cookie Banner Integration</h3>
+        <p>This page tests if the cookie banner appears and functions correctly.</p>
+        <p><strong>Instructions:</strong></p>
+        <ol>
+            <li>Clear your browser cookies for this site</li>
+            <li>Refresh the page</li>
+            <li>You should see a cookie banner at the bottom</li>
+            <li>Open browser console and run <code>debugCookies()</code></li>
+        </ol>
+    </div>
+    
+    <div class="test-info">
+        <h3>Debug Commands</h3>
+        <p>Open browser console and try these commands:</p>
+        <ul>
+            <li><code>debugCookies()</code> - Check cookie status</li>
+            <li><code>clearCookieConsent()</code> - Clear all cookies and reload</li>
+            <li><code>testCustomSettings()</code> - Test custom settings</li>
+        </ul>
+    </div>
+    
+    <div class="test-info">
+        <h3>Expected Behavior</h3>
+        <ul>
+            <li>Cookie banner should appear at bottom of page</li>
+            <li>Banner should have "Accept All", "Decline", and "Settings" buttons</li>
+            <li>Clicking "Accept All" should hide banner and enable analytics</li>
+            <li>Clicking "Decline" should hide banner and disable analytics</li>
+            <li>Clicking "Settings" should open a modal with cookie options</li>
+        </ul>
+    </div>
+    
+    <p><a href="/">← Back to Home</a></p>
+</body>
+</html>
