@@ -8,7 +8,7 @@ learning_focus: ["requirements-analysis", "project-planning"]
 difficulty: "beginner"
 ---
 
-Hey there! 👋
+Hey there!
 
 Today I'm documenting the requirements for a **Landlord-Tenant Management System** - a specialized application designed for individual landlords who manage their own properties and handle all aspects of tenant payments including rent, utilities, and maintenance.
 
