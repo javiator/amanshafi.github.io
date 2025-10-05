@@ -36,9 +36,10 @@ head:
     </style>'
   - '{% include analytics.html %}'
 
-# Custom body content - add cookie consent to all pages
-body:
+# Custom after body content - add cookie consent to all pages
+after_body:
   - '{% include cookie-consent.html %}'
+
 
 # Build settings
 markdown: kramdown
