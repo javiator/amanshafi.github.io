@@ -8,13 +8,13 @@ learning_focus: ["modular-architecture", "service-layer-pattern", "clean-separat
 difficulty: "intermediate"
 ---
 
-Hey there! 👋
+Hey there!
 
 Following up on my [previous post about the single-file tenant management app](/learning/development/implementation/tenant-management-app-singlefile/), today I want to share the next step - refactoring it into a **modular monolith**. This was a crucial learning experience that taught me the importance of clean architecture while keeping things manageable.
 
-> **📋 Requirements Context**: This modular architecture implementation is based on the detailed requirements outlined in [Landlord-Tenant Management System: Requirements and Objectives](/learning/requirements/analysis/tenant-management-requirements/). The requirements post explains the business goals and user stories that shaped both the single-file and modular implementations.
+> **Requirements Context**: This modular architecture implementation is based on the detailed requirements outlined in [Landlord-Tenant Management System: Requirements and Objectives](/learning/requirements/analysis/tenant-management-requirements/). The requirements post explains the business goals and user stories that shaped both the single-file and modular implementations.
 
-## Why Refactor? 🤔
+## Why Refactor?
 
 After building the single-file version (1,655 lines!), I quickly hit some walls:
 - **Maintainability**: Finding specific functionality in one massive file
@@ -24,7 +24,7 @@ After building the single-file version (1,655 lines!), I quickly hit some walls:
 
 The solution? **Modular Monolith Architecture** - a stepping stone toward microservices that gives you the benefits of separation without the complexity.
 
-## The Architecture Evolution 🔄
+## The Architecture Evolution
 
 ### Before: Single File (1,655 lines)
 Everything mixed together in one `app.py` file:
@@ -48,7 +48,7 @@ tenant-management-modular/
 └── instance/               # Shared SQLite database
 ```
 
-## Key Learning Experiences 📚
+## Key Learning Experiences
 
 ### 1. **Service Layer Pattern**
 I implemented a service layer to separate business logic from API routes:
@@ -215,7 +215,7 @@ class Config:
         app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = Config.SQLALCHEMY_TRACK_MODIFICATIONS
 ```
 
-## Technical Challenges and Solutions 🔧
+## Technical Challenges and Solutions
 
 ### Challenge 1: API Communication
 **Problem**: Frontend and backend running on different ports with CORS issues.
@@ -278,7 +278,7 @@ def main():
     frontend_thread.start()
 ```
 
-## Why Modular Monolith? 🎯
+## Why Modular Monolith?
 
 This architecture gives you the best of both worlds:
 
@@ -290,14 +290,14 @@ This architecture gives you the best of both worlds:
 - **Shared Database**: No data consistency issues
 - **Easy Debugging**: Everything runs in one process
 
-### 🚀 **Future Microservices Path**
+### **Future Microservices Path**
 The modular structure makes it easy to extract services later:
 - **Tenant Service**: Extract tenant management logic
 - **Property Service**: Extract property management logic  
 - **Transaction Service**: Extract financial transaction logic
 - **Notification Service**: Add email/SMS notifications
 
-## Technical Implementation 🔧
+## Technical Implementation
 
 ### Database Sharing
 Both backends use the same SQLite database with shared models.
@@ -322,7 +322,7 @@ uv run python run.py                             # Port 5000
 cd frontend && npm start                          # Port 3000
 ```
 
-## What I Learned About Full-Stack Development 🎯
+## What I Learned About Full-Stack Development
 
 ### 1. **Separation of Concerns**
 Even in a modular application, maintaining clear separation between:
@@ -349,7 +349,7 @@ Even in a modular application, maintaining clear separation between:
 - Lazy loading of related data
 - Optimized API responses
 
-## Key Takeaways 💡
+## Key Takeaways
 
 ### What I Learned
 1. **Modular Monoliths are Powerful**: You get most benefits of microservices without the complexity
@@ -364,7 +364,7 @@ Even in a modular application, maintaining clear separation between:
 - **React Development**: Component-based frontend
 - **Dual Implementation**: Comparing different frameworks
 
-## The Code 🚀
+## The Code
 
 You can explore both versions:
 - **Original**: [`tenant-management-app/`](https://github.com/javiator/tenant-management-applications/tree/main/tenant-management-app)
@@ -377,7 +377,7 @@ The modular version includes:
 - Comprehensive documentation
 - Auto-generated API docs
 
-## Final Thoughts 🤔
+## Final Thoughts
 
 The modular monolith approach was perfect for this stage of the project. It gave me:
 - **Clean Architecture**: Without over-engineering
@@ -387,4 +387,4 @@ The modular monolith approach was perfect for this stage of the project. It gave
 
 If you're building applications, consider the modular monolith as a stepping stone. It's a great way to learn clean architecture principles while keeping things simple and manageable.
 
-**Next up**: I'll be exploring how to evolve this into true microservices architecture - stay tuned! 🚀
+**Next up**: I'll be exploring how to evolve this into true microservices architecture - stay tuned!

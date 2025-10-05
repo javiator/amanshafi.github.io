@@ -308,7 +308,7 @@ permalink: /projects/
 
 Welcome to my collection of technical content covering architecture, development, and learning insights.
 
-## 📚 Recent Posts
+## Recent Posts
 
 ### Architecture & System Design
 - [Microservices vs Monolith: When to Choose What →](/learning/architecture/microservices-vs-monolith/) *(Architecture)*
@@ -330,7 +330,7 @@ Welcome to my collection of technical content covering architecture, development
 - [5 Years of React: Lessons and Best Practices →](/learning/insights/react-lessons/) *(Lessons)*
 - [Code Review Best Practices from 100+ Reviews →](/learning/insights/code-review-best-practices/) *(Lessons)*
 
-## 🏷️ Content by Type
+## Content by Type
 
 ### Architecture Analysis
 Deep dives into system design, architectural decisions, and design patterns.
@@ -350,7 +350,7 @@ Step-by-step guides and how-to content for practical implementation.
 ### Troubleshooting
 Problem-solving guides and debugging techniques.
 
-## 🎯 Content Focus Areas
+## Content Focus Areas
 
 - **System Architecture**: Microservices, monoliths, distributed systems
 - **API Design**: REST, GraphQL, API best practices
