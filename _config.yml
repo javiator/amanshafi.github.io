@@ -13,6 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+url: "https://blog.architectureon.co.uk"
+baseurl: ""
+# For local development, you can override with:
+# url: "http://localhost:4000"
 title: My Architecture and Learning space
 email: 
 description: Personal blog and portfolio — sharing projects, code, and learning notes.
@@ -82,7 +86,7 @@ analytics:
 
 author:
   name   : "Aman"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/site-profile.png"
   bio    : "Enterprise & Solution Architecture Leader"
   location: "London, UK"
   links:

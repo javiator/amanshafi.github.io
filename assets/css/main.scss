@@ -211,3 +211,21 @@ h2 a {
 .navigation .site__title {
   font-size: 28px !important;
 }
+
+// Bio photo enhancement - apply hover effects by default, no shadow
+.author__avatar img,
+.author__avatar svg {
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease !important;
+  filter: brightness(1.3) contrast(1.3) saturate(1.4) !important;
+  border: 3px solid rgba(255, 255, 255, 0.8) !important;
+  transform: scale(1.05) !important;
+}
+
+.author__avatar img:hover,
+.author__avatar svg:hover {
+  transform: scale(1.08) !important;
+  box-shadow: none !important;
+  filter: brightness(1.4) contrast(1.4) saturate(1.5) !important;
+}

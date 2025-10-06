@@ -13,10 +13,9 @@ sidebar:
 
 ---
 
+**Welcome to my corner of the internet** where I share my journey of learning and growing in the world of technology and solution architecture.
 
-**Welcome to my corner of the internet** where I share my journey of learning and growing in the world of technology and solution architecture. 
-
-#### **What This Blog Is About**
+## What This Blog Is About
 
 | **Content Type** | **What You'll Find** |
 |------------------|---------------------|
@@ -25,21 +24,49 @@ sidebar:
 | **Project Stories** | • Updates on my [GitHub projects](https://github.com/javiator) and what I'm building<br>• Behind-the-scenes of how I approach problems<br>• What worked, what didn't, and why<br>• Code snippets and examples |
 | **Sharing Knowledge** | • Interesting articles and resources I find<br>• Tools and techniques that make my work easier<br>• Lessons from working with different technologies<br>• Tips I pick up from the community |
 
+## Featured Posts
 
-#### Recent Posts
+{% assign featured_posts = site.posts | where: "featured", true %}
+{% for post in featured_posts limit:2 %}
 
-{% for post in site.posts limit:4 %}
-- **[{{ post.title }}]({{ post.url }})** - {{ post.excerpt | strip_html | truncate: 100 }}
+>  [**{{ post.title }}**]({{ post.url }})<br>
+*{{ post.date | date: "%B %d, %Y" }} • {{ post.categories | join: ", " }} • {{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min read*<br><br>{{ post.excerpt | strip_html | truncate: 150 }}<br><br>[Continue reading →]({{ post.url }}) 
+
+{% endfor %}
+
+## Recent Posts
+
+{% assign recent_posts = site.posts | where_exp: "post", "post.featured != true" %}
+{% for post in recent_posts limit:3 %}
+| [**{{ post.title }}**]({{ post.url }})<br><br>*{{ post.date | date: "%B %d, %Y" }} • {{ post.categories | join: ", " }} • {{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min read*<br><br>{{ post.excerpt | strip_html | truncate: 120 }}<br><br>[Read more →]({{ post.url }}) |
+
 {% endfor %}
 
 [View All Posts →](/posts/)
 
-#### Let's Connect!
+## Content Overview
 
-I'd love to hear from you! Feel free to:
-- Check out my code on [GitHub](https://github.com/javiator)
-- Connect with me on [LinkedIn](https://www.linkedin.com/in/amans82/)
-- Share your own learning experiences – I'd love to learn from you too!
+**{{ site.posts.size }} Posts** covering **{{ site.categories.size }} Topics** • **{{ site.tags.size }} Tags** for easy discovery
+
+**Popular Topics:** Architecture, Development, Requirements Analysis  
+**Content Types:** Tutorials, Case Studies, Learning Notes, Project Walkthroughs
+
+## Explore by Topic
+
+| **Topic** | **Description** | **Explore** |
+|-----------|-----------------|-------------|
+| **Architecture** | System design & patterns | [Explore →](/categories/#architecture) |
+| **Development** | Full-stack tutorials | [Explore →](/categories/#development) |
+| **Requirements** | Analysis & planning | [Explore →](/categories/#requirements) |
+
+
+## Stay Updated
+
+Want to follow my learning journey? Connect with me and stay updated on new content.
+
+- **[GitHub](https://github.com/javiator)** - View my projects and code contributions
+- **[LinkedIn](https://www.linkedin.com/in/amans82/)** - Connect for professional discussions
+
 
 Thanks for joining me on this learning adventure!
 
