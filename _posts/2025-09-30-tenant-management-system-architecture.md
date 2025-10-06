@@ -6,6 +6,7 @@ tags: [modular-monolith, system-architecture, component-architecture, learning]
 content_type: "architecture-analysis"
 learning_focus: ["modular-monolith", "layered-architecture", "separation-of-concerns", "system-design"]
 difficulty: "intermediate"
+mermaid: true
 ---
 
 Hey there!
