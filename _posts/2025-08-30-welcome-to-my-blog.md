@@ -2,13 +2,11 @@
 title: "Welcome to My Learning Journey!"
 date: 2025-08-30
 categories: [Learning, Architecture]
-tags: [intro, learning, architecture, experiences]
+tags: [intro, learning, architecture, experiences, personal-journey, blog-introduction, technology, solution-architecture]
 content_type: "opinion"
 learning_focus: ["learning-journey", "personal-development"]
 difficulty: "beginner"
 ---
-
-Hey there!  
 
 Welcome to my corner of the internet where I share my journey of learning and growing in the world of technology and solution architecture. I'm not claiming to be an expert – just someone passionate about building things and sharing what I learn along the way.
 

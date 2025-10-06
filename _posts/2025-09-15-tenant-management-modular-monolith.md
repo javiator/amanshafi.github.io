@@ -2,13 +2,12 @@
 title: "From Single-File to Modular Monolith: Refactoring the Tenant Management App"
 date: 2025-09-15
 categories: [Learning, Architecture, Refactoring]
-tags: [flask, fastapi, react, modular-monolith, refactoring, architecture]
+tags: [flask, fastapi, react, modular-monolith, refactoring, architecture, service-layer, separation-of-concerns, clean-code, api-design, frontend-backend, microservices-preparation]
 content_type: "architecture-analysis"
 learning_focus: ["modular-architecture", "service-layer-pattern", "clean-separation", "refactoring"]
 difficulty: "intermediate"
+featured: true
 ---
-
-Hey there!
 
 Following up on my [previous post about the single-file tenant management app](/learning/development/implementation/tenant-management-app-singlefile/), today I want to share the next step - refactoring it into a **modular monolith**. This was a crucial learning experience that taught me the importance of clean architecture while keeping things manageable.
 

@@ -1,35 +1,37 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ecf0f1;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
   <!-- Background circle -->
-  <circle cx="100" cy="100" r="100" fill="#2c3e50"/>
+  <circle cx="100" cy="100" r="100" fill="url(#bgGradient)"/>
   
-  <!-- Suit silhouette -->
-  <rect x="60" y="80" width="80" height="100" rx="8" fill="#34495e"/>
-  
-  <!-- Head -->
-  <circle cx="100" cy="70" r="25" fill="#ecf0f1"/>
-  
-  <!-- Tie -->
-  <rect x="95" y="80" width="10" height="40" fill="#e74c3c"/>
-  
-  <!-- Shirt collar -->
-  <path d="M85 80 L100 90 L115 80 L110 85 L100 88 L90 85 Z" fill="#ecf0f1"/>
-  
-  <!-- Briefcase handle -->
-  <rect x="75" y="120" width="50" height="8" rx="4" fill="#34495e"/>
-  <rect x="80" y="125" width="40" height="3" rx="1.5" fill="#2c3e50"/>
-  
-  <!-- Architecture diagram elements (small icons) -->
-  <!-- Server icon -->
-  <rect x="40" y="40" width="20" height="15" rx="2" fill="#3498db"/>
-  <rect x="45" y="42" width="10" height="2" fill="#2c3e50"/>
-  <rect x="45" y="46" width="10" height="2" fill="#2c3e50"/>
-  <rect x="45" y="50" width="10" height="2" fill="#2c3e50"/>
-  
-  <!-- Database icon -->
-  <ellipse cx="160" cy="45" rx="15" ry="8" fill="#27ae60"/>
-  <ellipse cx="160" cy="50" rx="15" ry="8" fill="#2ecc71"/>
-  <rect x="145" y="45" width="30" height="10" fill="#27ae60"/>
-  
-  <!-- Cloud icon -->
-  <path d="M30 160 Q20 150 30 140 Q40 130 50 140 Q60 130 70 140 Q80 150 70 160 Q60 170 50 160 Q40 170 30 160" fill="#95a5a6"/>
+  <!-- Clean geometric design -->
+  <g fill="url(#textGradient)" opacity="0.9">
+    <!-- Central hexagon -->
+    <polygon points="100,50 120,65 120,95 100,110 80,95 80,65" fill="url(#textGradient)"/>
+    
+    <!-- Corner elements -->
+    <circle cx="60" cy="60" r="8" fill="url(#accentGradient)" opacity="0.8"/>
+    <circle cx="140" cy="60" r="8" fill="url(#accentGradient)" opacity="0.8"/>
+    <circle cx="60" cy="140" r="8" fill="url(#accentGradient)" opacity="0.8"/>
+    <circle cx="140" cy="140" r="8" fill="url(#accentGradient)" opacity="0.8"/>
+    
+    <!-- Connecting lines -->
+    <line x1="60" y1="60" x2="100" y2="100" stroke="url(#accentGradient)" stroke-width="3" opacity="0.6"/>
+    <line x1="140" y1="60" x2="100" y2="100" stroke="url(#accentGradient)" stroke-width="3" opacity="0.6"/>
+    <line x1="60" y1="140" x2="100" y2="100" stroke="url(#accentGradient)" stroke-width="3" opacity="0.6"/>
+    <line x1="140" y1="140" x2="100" y2="100" stroke="url(#accentGradient)" stroke-width="3" opacity="0.6"/>
+  </g>
 </svg>
