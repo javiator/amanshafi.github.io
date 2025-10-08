@@ -212,6 +212,15 @@ h2 a {
   font-size: 28px !important;
 }
 
+// Sidebar Recent Posts - use Minimal Mistakes built-in toggle pattern
+// The theme uses input[type=checkbox] + label to toggle .nav__items on mobile
+// We only ensure the section is closed by default on mobile by leaving checkbox unchecked
+@media (max-width: 63.9375em) {
+  .nav__list.recent-posts .nav__title {
+    display: none;
+  }
+}
+
 // Bio photo enhancement - apply hover effects by default, no shadow
 .author__avatar img,
 .author__avatar svg {
