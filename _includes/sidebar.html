@@ -4,8 +4,10 @@
   
   {% if page.id %}
     <hr>
-    <nav class="nav__list">
+    <nav class="nav__list recent-posts">
       <h3 class="nav__title"><i class="fas fa-fw fa-stream" aria-hidden="true"></i> Recent Posts</h3>
+      <input id="recent-posts-toggle" type="checkbox">
+      <label for="recent-posts-toggle"><i class="fas fa-fw fa-stream" aria-hidden="true"></i> Recent Posts</label>
       <ul class="nav__items">
         {% for post in site.posts limit:5 %}
           {% if post.id != page.id %}
