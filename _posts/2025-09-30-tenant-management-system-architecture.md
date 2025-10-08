@@ -1,7 +1,7 @@
 ---
 title: "Tenant Management System: Modular Monolith Architecture"
 date: 2025-09-30
-categories: [Learning, Architecture, System Design]
+categories: [Learning, Architecture, system-design]
 tags: [modular-monolith, system-architecture, component-architecture, learning, design-patterns, layered-architecture, database-design, api-architecture, scalability, maintainability, enterprise-architecture]
 content_type: "architecture-analysis"
 learning_focus: ["modular-monolith", "layered-architecture", "separation-of-concerns", "system-design"]
@@ -10,7 +10,7 @@ mermaid: true
 featured: true
 ---
 
-Building on our [modular monolith evolution](/learning/architecture/system%20design/tenant-management-modular-monolith/), today I want to dive deep into the **system architecture** of the Tenant Management System. This post explores the architectural decisions, component relationships, and design patterns that make this modular monolith scalable and maintainable.
+Building on our [modular monolith evolution](/learning/architecture/refactoring/tenant-management-modular-monolith/), today I want to dive deep into the **system architecture** of the Tenant Management System. This post explores the architectural decisions, component relationships, and design patterns that make this modular monolith scalable and maintainable.
 
 > **Requirements Context**: This system architecture is designed to fulfill the requirements outlined in [Landlord-Tenant Management System: Requirements and Objectives](/learning/requirements/analysis/tenant-management-requirements/). The requirements post provides the business context and user stories that informed these architectural decisions.
 

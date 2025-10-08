@@ -220,4 +220,4 @@ With these requirements defined, the next phases include:
 
 This requirements document serves as the foundation for building the Landlord-Tenant Management System. It focuses on simplicity, clarity, and practical utility for individual landlords managing their rental properties.
 
-*Want to see how these requirements evolved into a working application? Check out the [Single-File Implementation](/learning/development/implementation/tenant-management-app-singlefile/) and [Modular Architecture](/learning/architecture/system%20design/tenant-management-modular-monolith/) posts!*
+*Want to see how these requirements evolved into a working application? Check out the [Single-File Implementation](/learning/full-stack-development/python/tenant-management-app-singlefile/) and [Modular Architecture](/learning/architecture/refactoring/tenant-management-modular-monolith/) posts!*

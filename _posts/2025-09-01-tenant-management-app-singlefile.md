@@ -1,7 +1,7 @@
 ---
 title: "Building a Full-Stack Property Management App: Single File Version"
 date: 2025-09-01
-categories: [Learning, Full-Stack Development, Python]
+categories: [Learning, full-stack-development, Python]
 tags: [flask, sqlalchemy, property-management, full-stack, learning, web-development]
 content_type: "feature-development"
 learning_focus: ["single-file-architecture", "rapid-prototyping", "embedded-templates", "flask", "sqlalchemy"]
