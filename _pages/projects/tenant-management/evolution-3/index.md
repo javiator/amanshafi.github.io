@@ -7,7 +7,7 @@ layout: single
 **Status**: 🔄 Active  
 **Focus**: Enterprise patterns and Spring Boot migration  
 **Technologies**: Java, Spring Boot, React, Docker, PostgreSQL  
-**Posts**: 2 posts
+**Posts**: 3 posts
 
 ## Evolution Overview
 
@@ -34,6 +34,12 @@ The third evolution focuses on **enterprise patterns** and **Spring Boot migrati
 **Date**: October 10, 2025  
 **Focus**: System architecture, layered design, deployment strategy  
 **Key Learnings**: Enterprise architecture patterns, Docker orchestration, production readiness
+
+### [Tenant Management App Demo (WebUI)](/learning/development/demo/tenant-management-app-demo-webui/)
+
+**Date**: October 11, 2025  
+**Focus**: User interface demo, application walkthrough, user experience  
+**Key Learnings**: User interface design, React integration, full-stack demo
 
 ## Technical Achievements
 
