@@ -31,7 +31,7 @@ sidebar:
 Follow my systematic approach to evolving a single project through 5 different architectural approaches, from single-file to AI-enhanced interfaces.
 
 **Current Evolution**: Evolution 3 - Java Enterprise Stack  
-**Total Posts**: 5 posts across 3 evolutions  
+**Total Posts**: 6 posts across 3 evolutions  
 **Technologies**: Python, Flask, Java, Spring Boot, React, Docker
 
 [Explore the Evolution →](/projects/tenant-management/)

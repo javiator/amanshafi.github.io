@@ -51,7 +51,7 @@ graph TD
 The Tenant Management project started as a simple single-file application and has evolved through multiple architectural approaches, each representing different learning objectives and technology mastery goals.
 
 **Current Status**: Evolution 3 - Java Enterprise Stack (Active)  
-**Total Posts**: 6 posts across 3 evolutions  
+**Total Posts**: 7 posts across 3 evolutions  
 **Technologies**: Python, Flask, FastAPI, React, Java, Spring Boot, Docker
 
 ## Technical Architecture Evolution
@@ -114,12 +114,13 @@ graph TB
 
 ### Evolution 3: Java Enterprise Stack
 **Status**: 🔄 Active  
-**Posts**: 2 posts  
+**Posts**: 3 posts  
 **Focus**: Enterprise patterns and Spring Boot migration  
 **Technologies**: Java, Spring Boot, React, Docker, PostgreSQL
 
 - [Tenant Management App: Spring Boot and React Transition](/learning/development/java/tenant-management-java-transition/)
 - [Tenant Management Java Stack: System Architecture](/learning/architecture/system-design/tenant-management-java-architecture/)
+- [Tenant Management App Demo (WebUI)](/learning/development/demo/tenant-management-app-demo-webui/)
 
 ### Evolution 4: AI-Enhanced Interface
 **Status**: 📋 Planned  
