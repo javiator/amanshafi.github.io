@@ -6,11 +6,19 @@ tags: [requirements, objectives, user-stories, tenant-management, property-manag
 content_type: "requirements"
 learning_focus: ["requirements-analysis", "project-planning"]
 difficulty: "beginner"
+# Evolutionary Project Fields
+project: "Tenant Management"
+project_type: "evolutionary"
+evolution: "Foundation: Requirements & Analysis"
+evolution_number: 0
+evolution_focus: "Requirements Analysis"
 ---
 
 Today I'm documenting the requirements for a **Landlord-Tenant Management System** - a specialized application designed for individual landlords who manage their own properties and handle all aspects of tenant payments including rent, utilities, and maintenance.
 
 This isn't your typical enterprise property management system. Instead, it's a practical tool for landlords who want to track their properties, tenants, and financial transactions all in one place.
+
+> **Evolution Context**: This post serves as the foundation for the [Tenant Management: An Evolutionary Project](/projects/tenant-management/). These requirements have guided the development through multiple architectural evolutions, from single-file applications to enterprise-ready Java stacks.
 
 ## What We Plan to Create
 

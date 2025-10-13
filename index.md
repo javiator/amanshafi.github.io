@@ -24,6 +24,18 @@ sidebar:
 | **Project Stories** | • Updates on my [GitHub projects](https://github.com/javiator) and what I'm building<br>• Behind-the-scenes of how I approach problems<br>• What worked, what didn't, and why<br>• Code snippets and examples |
 | **Sharing Knowledge** | • Interesting articles and resources I find<br>• Tools and techniques that make my work easier<br>• Lessons from working with different technologies<br>• Tips I pick up from the community |
 
+## Featured Project: Tenant Management Evolution
+
+**An Evolutionary Journey Through Architecture**
+
+Follow my systematic approach to evolving a single project through 5 different architectural approaches, from single-file to AI-enhanced interfaces.
+
+**Current Evolution**: Evolution 3 - Java Enterprise Stack  
+**Total Posts**: 5 posts across 3 evolutions  
+**Technologies**: Python, Flask, Java, Spring Boot, React, Docker
+
+[Explore the Evolution →](/projects/tenant-management/)
+
 ## Featured Posts
 
 {% assign featured_posts = site.posts | where: "featured", true %}
