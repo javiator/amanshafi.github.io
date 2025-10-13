@@ -6,9 +6,17 @@ tags: [tenant-management, spring-boot, react, java, backend, frontend, full-stac
 content_type: "feature-development"
 learning_focus: ["spring-boot", "react", "java-ecosystem", "full-stack-refactor"]
 difficulty: "intermediate"
+# Evolutionary Project Fields
+project: "Tenant Management"
+project_type: "evolutionary"
+evolution: "Evolution 3: Java Enterprise Stack"
+evolution_number: 3
+evolution_focus: "Spring Boot Migration"
 ---
 
 Today I kicked off a new chapter for the Tenant Management application by rebuilding it as a **React + Spring Boot** project. After exploring the Python/Flask versions, this move lets me lean into the Java ecosystem I know best while deliberately relearning Spring Boot with modern practices. This first increment focuses on getting the new stack stood up with real code, configs, and migrations—the feature parity work comes next.
+
+> **Evolution Context**: This post is part of [Evolution 3: Java Enterprise Stack](/projects/tenant-management/evolution-3/) in the [Tenant Management Evolutionary Project](/projects/tenant-management/). This evolution focuses on enterprise patterns and Spring Boot migration, building upon the modular architecture established in [Evolution 2](/projects/tenant-management/evolution-2/).
 
 > **Requirements Context**: This iteration still fulfills the functional goals from [Landlord-Tenant Management System: Requirements and Objectives](/learning/requirements/analysis/tenant-management-requirements/) while extending the architectural journey that started in [From Single-File to Modular Monolith: Refactoring the Tenant Management App](/learning/architecture/refactoring/tenant-management-modular-monolith/).
 
@@ -135,6 +143,25 @@ const fetchTenants = useCallback(async () => {
 - React’s component model makes it easier to iterate on UX without disturbing backend concerns.
 - The migration narrative itself is a great story for interviews and future architecture posts.
 
+## Key Learnings
+
+- **Enterprise Patterns**: Spring Boot's convention-over-configuration approach provides a solid foundation for production-ready applications
+- **Profile Management**: Environment-specific configurations enable seamless development and production deployments
+- **Migration Strategy**: Flyway migrations ensure schema consistency across different database environments
+- **Containerization**: Docker Compose orchestration simplifies development and deployment workflows
+- **Technology Evolution**: Moving from Python/Flask to Java/Spring Boot demonstrates how similar concepts translate across ecosystems
+
+## Evolution Progression
+
+This transition represents a significant step in the evolutionary journey:
+- **From Evolution 2**: Built upon the modular architecture and service layer patterns
+- **To Evolution 3**: Introduced enterprise-ready patterns and Java ecosystem depth
+- **Next Steps**: Focus on REST API implementation, testing, and production deployment strategies
+
+{% include evolution/evolution-posts.html %}
+
+{% include evolution/post-navigation.html %}
+
 ## Conclusion
 
-This transition isn’t just a tech swap—it’s a deliberate chance to evaluate the Tenant Management domain through a stack I want to master long-term. Over the next posts I’ll break down architecture decisions, deployment setup, and lessons learned as this Java/Spring Boot version evolves.
+This transition isn't just a tech swap—it's a deliberate chance to evaluate the Tenant Management domain through a stack I want to master long-term. Over the next posts I'll break down architecture decisions, deployment setup, and lessons learned as this Java/Spring Boot version evolves.

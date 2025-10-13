@@ -7,9 +7,17 @@ content_type: "architecture-analysis"
 learning_focus: ["spring-boot-architecture", "react-integration", "layered-architecture", "deployment-strategy"]
 difficulty: "intermediate"
 mermaid: true
+# Evolutionary Project Fields
+project: "Tenant Management"
+project_type: "evolutionary"
+evolution: "Evolution 3: Java Enterprise Stack"
+evolution_number: 3
+evolution_focus: "Spring Boot Migration"
 ---
 
 Building on the hands-on migration I shared in [Tenant Management App: Spring Boot and React Transition](/learning/development/java/tenant-management-java-transition/), this post documents the **current architecture baseline** for the new Java-based system. Right now the focus is scaffolding: wiring Spring Boot, Flyway, and the React frontend so the upcoming feature work has a solid foundation, while still keeping the modular principles from the earlier [modular monolith evolution](/learning/architecture/refactoring/tenant-management-modular-monolith/) in sight.
+
+> **Evolution Context**: This post is part of [Evolution 3: Java Enterprise Stack](/projects/tenant-management/evolution-3/) in the [Tenant Management Evolutionary Project](/projects/tenant-management/). This evolution focuses on enterprise patterns and Spring Boot migration, building upon the modular architecture established in [Evolution 2](/projects/tenant-management/evolution-2/).
 
 ## System Architecture Overview
 
@@ -242,17 +250,26 @@ volumes:
 - **Observability Enhancements** – Layer in Micrometer with Prometheus/Grafana once the service starts processing real workload metrics.
 
 This baseline keeps the independence and discoverability goals of the blog framework while pushing the Tenant Management project toward an enterprise-ready Java stack. Upcoming posts will cover domain-driven refinements, CI/CD automation, and production deployment experiments.
-```
 
-- **Profile Switching** toggles between in-memory and Postgres datasources without code changes.
-- **Actuator Exposure** enables health checks and Prometheus metrics for container orchestration.
-- **Volume Mapping** keeps database state durable during local development sessions.
+## Key Learnings
 
-## Looking Ahead
+- **Layered Architecture**: Spring Boot's layered approach provides clear separation of concerns while maintaining flexibility
+- **Database Migration**: Flyway ensures schema consistency across development and production environments
+- **Containerization**: Docker Compose orchestration enables consistent development and deployment workflows
+- **Profile Management**: Environment-specific configurations support different deployment scenarios
+- **Enterprise Patterns**: Spring Boot's convention-over-configuration approach accelerates development while maintaining quality
 
-- **Observability** – Wire Micrometer into Prometheus + Grafana for request tracing and alerting.
-- **Authentication** – Introduce Spring Security JWT flow and reflect it in the React client.
-- **Automated Tests** – Add Testcontainers-based integration tests to validate repository + service interactions.
-- **Scalability Path** – Extract reporting workloads into scheduled Spring Batch jobs or dedicated microservices if usage demands separation.
+## Evolution Progression
+
+This architecture represents a significant advancement in the evolutionary journey:
+- **From Evolution 2**: Built upon the modular monolith architecture and service layer patterns
+- **To Evolution 3**: Introduced enterprise-ready patterns, containerization, and Java ecosystem depth
+- **Next Steps**: Focus on REST API implementation, testing strategies, and production deployment
+
+{% include evolution/evolution-posts.html %}
+
+{% include evolution/post-navigation.html %}
+
+## Conclusion
 
 This architecture keeps the independence and discoverability goals of the blog framework while pushing the Tenant Management project into an enterprise-ready Java stack. Upcoming posts will cover domain-driven refinements, CI/CD automation, and production deployment experiments.

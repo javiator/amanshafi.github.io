@@ -8,9 +8,17 @@ learning_focus: ["modular-monolith", "layered-architecture", "separation-of-conc
 difficulty: "intermediate"
 mermaid: true
 featured: true
+# Evolutionary Project Fields
+project: "Tenant Management"
+project_type: "evolutionary"
+evolution: "Evolution 2: Modular Architecture"
+evolution_number: 2
+evolution_focus: "Modular Monolith"
 ---
 
 Building on our [modular monolith evolution](/learning/architecture/refactoring/tenant-management-modular-monolith/), today I want to dive deep into the **system architecture** of the Tenant Management System. This post explores the architectural decisions, component relationships, and design patterns that make this modular monolith scalable and maintainable.
+
+> **Evolution Context**: This post is part of [Evolution 2: Modular Architecture](/projects/tenant-management/evolution-2/) in the [Tenant Management Evolutionary Project](/projects/tenant-management/). This evolution focuses on system architecture and design patterns, building upon the modular monolith foundation established in the previous evolution.
 
 > **Requirements Context**: This system architecture is designed to fulfill the requirements outlined in [Landlord-Tenant Management System: Requirements and Objectives](/learning/requirements/analysis/tenant-management-requirements/). The requirements post provides the business context and user stories that informed these architectural decisions.
 

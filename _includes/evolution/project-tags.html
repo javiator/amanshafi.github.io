@@ -1,0 +1,143 @@
+<!-- Project Tags and Navigation Component -->
+<div class="project-tags-navigation">
+  <div class="project-badge">
+    <span class="badge-icon">🏗️</span>
+    <span class="badge-text">Evolutionary Project</span>
+  </div>
+  
+  <div class="project-info">
+    <div class="project-name">
+      <strong>Tenant Management</strong>
+      <span class="project-type">Evolutionary Project</span>
+    </div>
+    <div class="evolution-info">
+      <span class="evolution-badge">Evolution {{ page.evolution_number }}</span>
+      <span class="evolution-focus">{{ page.evolution_focus }}</span>
+    </div>
+  </div>
+  
+  <div class="quick-navigation">
+    <a href="/projects/tenant-management/" class="nav-link">Project Overview</a>
+    <a href="/projects/tenant-management/evolution-{{ page.evolution_number }}/" class="nav-link">Evolution {{ page.evolution_number }}</a>
+    <a href="/projects/tenant-management/posts/" class="nav-link">All Posts</a>
+  </div>
+</div>
+
+<style>
+.project-tags-navigation {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+}
+
+.project-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-name strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-type {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.evolution-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.evolution-badge {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.evolution-focus {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.quick-navigation {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .project-tags-navigation {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .project-info {
+    min-width: auto;
+  }
+  
+  .quick-navigation {
+    justify-content: center;
+  }
+  
+  .nav-link {
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+  }
+}
+</style>
